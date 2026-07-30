@@ -64,6 +64,9 @@ Hace:
 - actualiza `export_presets.cfg` para el build actual
 - exporta APK debug o release
 - publica APK y checksum como artifact
+- publica la URL del artifact en el summary del run
+- comenta la URL en el PR cuando corre por `pull_request`
+- permite comentar la URL en un issue si `workflow_dispatch` recibe `issue_number`
 
 ### `Android Release Candidate`
 
@@ -97,6 +100,8 @@ Hace:
 5. Hacer merge a `main`.
 6. Probar en dispositivo real con [android_release_checklist.md](android_release_checklist.md) y [persistence_smoke_test.md](persistence_smoke_test.md).
 7. Cuando la candidata este aprobada, correr `Android Release Candidate`.
+
+Si necesitas lanzar una candidata manual, ejecuta `Android Candidate Build` con `version_name`, `version_code`, `build_type` y opcionalmente `issue_number` para que el workflow deje la liga del artifact en ese issue.
 
 ## Notas
 
