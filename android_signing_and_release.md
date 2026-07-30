@@ -62,6 +62,8 @@ Salida esperada:
 - APK firmada
 - checksum `.sha256`
 - GitHub Release asociada al commit
+- manifest JSON con metadatos de la corrida
+- verificacion posterior de URL y assets publicados
 
 ## Reglas operativas
 
