@@ -44,6 +44,7 @@ Esta corrida cubre:
 2. Abrir pausa.
 3. Ejecutar `QA RESET TOTAL`.
 4. Cerrar y reabrir la app para empezar desde estado cero.
+5. Si se esta validando una migracion, revisar la estrategia en [save_schema.md](save_schema.md).
 
 ## Checklist
 
@@ -187,6 +188,22 @@ Pasa si:
 Pasa si:
 - La build puede considerarse candidata para una validacion mas amplia.
 
+### 11. Migracion de save legacy
+
+1. Instalar una build o usar datos creados antes del schema versionado.
+2. Abrir la app.
+3. Confirmar que progreso, audio y torneo siguen legibles o se resetean de forma controlada.
+4. Cerrar la app.
+5. Reabrir la app.
+
+- [ ] La app no crashea al leer datos legacy.
+- [ ] Los datos compatibles se migran y siguen utilizables.
+- [ ] Un save invalido o incompatible no deja estado roto.
+- [ ] Tras reabrir, el estado ya queda estable en el nuevo schema.
+
+Pasa si:
+- La migracion o invalidacion ocurre de forma controlada y no deja corrupcion silenciosa.
+
 ## Evidencia minima sugerida
 
 - 1 captura del menu despues de reabrir la app con ajustes persistidos.
@@ -208,3 +225,4 @@ Pasa si:
 | Reintento de torneo con costo |  |  |  |
 | Cambio de idioma con torneo guardado |  |  |  |
 | Corrida de cierre |  |  |  |
+| Migracion de save legacy |  |  |  |
