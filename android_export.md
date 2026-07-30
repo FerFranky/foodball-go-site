@@ -1,6 +1,7 @@
 # Android Export Setup
 
 This project now includes a base Android export preset in `export_presets.cfg`.
+The repository also includes CI/CD support in `.github/workflows/`.
 
 ## Project-ready settings
 
@@ -10,6 +11,9 @@ This project now includes a base Android export preset in `export_presets.cfg`.
 - Orientation: landscape in `project.godot`
 - Android export path preset: `builds/android/FoodballGo.apk`
 - Target architecture: `arm64-v8a`
+- Android package name: `com.ferfranky.foodballgo`
+- Version name preset: `0.1.0`
+- Launcher app visibility: enabled
 
 ## Still required in your local Godot editor
 
@@ -40,6 +44,13 @@ These values are machine-specific and should be configured on your PC:
 - Architecture: `arm64-v8a`
 - Debug build first
 - Test on a real landscape Android phone
+
+## CI/CD references
+
+- CI/CD overview: [android_cicd.md](android_cicd.md)
+- Permission posture: [android_permission_posture.md](android_permission_posture.md)
+- Signing and secrets: [android_signing_and_release.md](android_signing_and_release.md)
+- Release smoke checklist: [android_release_checklist.md](android_release_checklist.md)
 
 ## Notes
 
