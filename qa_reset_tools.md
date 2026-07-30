@@ -4,12 +4,24 @@
 
 Permitir pruebas repetibles sin borrar archivos manualmente dentro de `user://`.
 
+## Switch de activacion
+
+Las herramientas QA no aparecen solo por correr una build `debug`.
+
+- Config actual: `project.godot`
+- Ruta: `foodball/qa_tools_enabled`
+- Default: `false`
+
+Con `false`, la UI se comporta como un player normal.
+Con `true`, una build `debug` muestra las herramientas QA en pausa.
+
 ## Como usarlo
 
-1. Corre una build `debug`.
-2. Entra a cualquier partido.
-3. Abre pausa.
-4. Usa la seccion `QA TOOLS`.
+1. Activa `foodball/qa_tools_enabled=true`.
+2. Corre una build `debug`.
+3. Entra a cualquier partido.
+4. Abre pausa.
+5. Usa la seccion `QA TOOLS`.
 
 ## Acciones disponibles
 
