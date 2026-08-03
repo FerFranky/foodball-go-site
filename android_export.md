@@ -14,6 +14,7 @@ The repository also includes CI/CD support in `.github/workflows/`.
 - Android package name: `com.ferfranky.foodballgo`
 - Version name preset: `1.0.8`
 - Launcher app visibility: enabled
+- Compile and target SDK: Android 16 / API 36
 
 ## Still required in your local Godot editor
 
@@ -36,6 +37,7 @@ These values are machine-specific and should be configured on your PC:
    - package name
    - version code
    - version name
+- Set **Target SDK** to `36`.
 - internet permission enabled for rewarded AdMob ads
 
 ## Recommended first export
@@ -44,6 +46,7 @@ These values are machine-specific and should be configured on your PC:
 - Architecture: `arm64-v8a`
 - Debug build first
 - Test on a real landscape Android phone
+- Validate the generated APK with `aapt dump badging`; it must report `targetSdkVersion:'36'`.
 
 ## CI/CD references
 

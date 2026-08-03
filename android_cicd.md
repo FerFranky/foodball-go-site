@@ -58,11 +58,13 @@ Hace:
 
 - valida el repo
 - instala Android SDK segun la ruta recomendada por Godot
+- instala Android SDK Platform 36 y Build-Tools 36.0.0
 - descarga Godot `4.3-stable` y sus export templates oficiales
 - crea un debug keystore temporal
 - escribe `editor_settings` para export Android en CI
 - actualiza `export_presets.cfg` para el build actual
 - exporta APK debug o release
+- verifica con `aapt` que el artifact exportado declara `targetSdkVersion=36`
 - publica APK y checksum como artifact
 - publica la URL del artifact en el summary del run
 - comenta la URL en el PR cuando corre por `pull_request`
@@ -81,6 +83,7 @@ Hace:
 - valida el repo
 - exige secretos de firma release
 - construye APK release firmada
+- verifica que la APK release declara `targetSdkVersion=36`
 - genera checksum SHA-256
 - publica una GitHub Release con el APK adjunto
 

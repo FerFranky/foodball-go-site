@@ -19,6 +19,7 @@ Validar una APK candidata en dispositivo Android real antes de promoverla a rele
 ### Instalacion y arranque
 
 - [ ] La APK instala sin errores.
+- [ ] La build se prueba en al menos un dispositivo o emulador con Android 16 (API 36).
 - [ ] El icono y nombre de app se ven correctos en launcher.
 - [ ] La app abre en landscape.
 - [ ] Los splash no muestran artefactos visuales obvios.
