@@ -2,15 +2,16 @@
 
 ## Objetivo
 
-Fijar la postura minima de permisos Android para el MVP y evitar que el pipeline publique builds con capacidades que el juego no necesita.
+Fijar la postura minima de permisos Android y evitar que el pipeline publique builds con capacidades que el juego no necesita.
 
 ## Principio
 
-Foodball Go MVP debe operar sin red, sin acceso a datos personales y sin sensores sensibles del dispositivo.
+Foodball Go usa red exclusivamente para los anuncios recompensados de Google AdMob. No solicita acceso al almacenamiento del usuario, sensores sensibles ni permisos en tiempo de ejecucion.
+
+`permissions/internet` debe estar en `true` mientras `[admob] enabled=true` en `project.godot`. Si AdMob se desactiva, CI exige que vuelva a `false`.
 
 ## Permisos que deben seguir en `false`
 
-- `permissions/internet`
 - `permissions/access_network_state`
 - `permissions/access_wifi_state`
 - `permissions/read_external_storage`
@@ -22,14 +23,14 @@ Foodball Go MVP debe operar sin red, sin acceso a datos personales y sin sensore
 
 ## Justificacion
 
-- No hay backend productivo en alcance MVP.
+- AdMob requiere conectividad para cargar anuncios recompensados. La integracion no usa un backend propio.
 - No hay captura de audio o camara en gameplay.
 - No hay necesidad de leer almacenamiento del usuario.
 - No hay funcionalidad de push notifications en el alcance actual.
 
 ## Aplicacion en CI
 
-`scripts/ci/validate_project.py` falla si alguno de esos permisos cambia a `true`.
+`scripts/ci/validate_project.py` falla si algun permiso restringido cambia a `true`, o si el permiso de internet no coincide con el estado de AdMob.
 
 ## Regla para cambios futuros
 

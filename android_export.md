@@ -12,7 +12,7 @@ The repository also includes CI/CD support in `.github/workflows/`.
 - Android export path preset: `builds/android/FoodballGo.apk`
 - Target architecture: `arm64-v8a`
 - Android package name: `com.ferfranky.foodballgo`
-- Version name preset: `0.1.0`
+- Version name preset: `1.0.8`
 - Launcher app visibility: enabled
 
 ## Still required in your local Godot editor
@@ -36,7 +36,7 @@ These values are machine-specific and should be configured on your PC:
    - package name
    - version code
    - version name
-   - permissions if later needed
+- internet permission enabled for rewarded AdMob ads
 
 ## Recommended first export
 
@@ -50,6 +50,7 @@ These values are machine-specific and should be configured on your PC:
 - CI/CD overview: [android_cicd.md](android_cicd.md)
 - Permission posture: [android_permission_posture.md](android_permission_posture.md)
 - Signing and secrets: [android_signing_and_release.md](android_signing_and_release.md)
+- AdMob configuration: [admob_setup.md](admob_setup.md)
 - Release smoke checklist: [android_release_checklist.md](android_release_checklist.md)
 
 ## Notes
