@@ -21,6 +21,8 @@ The Android package is `com.ferfranky.foodballgo`. An Android build needs intern
 
 Before release, publish the privacy policy URL in AdMob/Play Console and configure Google UMP consent messaging for the countries where it applies. Payment and account verification are completed inside AdMob and are not part of the app build.
 
+The repository publishes the privacy policy through GitHub Pages at `https://ferfranky.github.io/foodball-go/privacy-policy/` once the Pages workflow is enabled for the repository.
+
 ## Verification
 
 1. Install a debug APK on Android.
