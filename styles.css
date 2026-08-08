@@ -23,12 +23,15 @@ body { margin: 0; background: var(--night); overflow-x: hidden; }
 a { color: inherit; text-decoration: none; }
 .shell { width: min(1160px, calc(100% - 40px)); margin: 0 auto; }
 .topbar { position: relative; z-index: 2; display: flex; align-items: center; justify-content: space-between; padding: 27px 0; }
+.utility-nav { display: flex; align-items: center; gap: 16px; }
 .brand { display: inline-flex; align-items: center; gap: 11px; font: 800 1.25rem/1 'Barlow Condensed', sans-serif; letter-spacing: .06em; text-transform: uppercase; }
 .site-logo { display: block; width: 154px; height: auto; max-height: 64px; object-fit: contain; object-position: left center; }
 .brand-mark { display: grid; place-items: center; width: 37px; height: 37px; border-radius: 12px 4px 12px 4px; color: var(--ink); background: var(--yellow); transform: rotate(-8deg); font-size: 1.45rem; }
 .brand span { color: var(--yellow); }
 nav { display: flex; align-items: center; gap: 27px; color: var(--muted); font-size: .88rem; }
 nav a:hover, .footer a:hover { color: var(--cream); }
+.language-switch { display: inline-flex; align-items: center; justify-content: center; min-width: 2.45rem; min-height: 2.45rem; border: 1px solid var(--cyan); border-radius: 999px; color: var(--cyan); font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-decoration: none; }
+.language-switch:hover, .language-switch:focus-visible { background: var(--cyan); color: var(--night); outline: none; }
 .nav-cta, .button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border: 0; border-radius: 8px; background: var(--yellow); color: var(--ink); padding: 13px 18px; font-weight: 700; cursor: pointer; transition: transform .2s, box-shadow .2s; }
 .nav-cta:hover, .button:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(255, 212, 71, .2); }
 .hero { position: relative; min-height: 680px; display: grid; align-items: center; padding: 40px 0 90px; }
@@ -101,7 +104,8 @@ section { padding: 95px 0; }
 }
 @media (max-width: 780px) {
   .shell { width: min(100% - 28px, 600px); }
-  nav a:not(.nav-cta) { display: none; }
+  .topbar > nav:not(.utility-nav) a:not(.nav-cta):not(.language-switch) { display: none; }
+  .utility-nav { gap: 10px; }
   .hero { min-height: auto; padding: 45px 0 75px; }
   .hero-grid, .journey-layout { grid-template-columns: 1fr; gap: 55px; }
   .arena { min-height: 350px; }
