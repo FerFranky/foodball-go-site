@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-06.3",
+  "revision": "2026-10-06.4",
   "min_client_version": "1.0.11",
   "characters": [
     {
@@ -11,8 +11,8 @@
         "en": "Pan de Muerto"
       },
       "sprite_scale": [
-        0.34,
-        0.34
+        0.22,
+        0.22
       ],
       "min_client_version": "1.0.11",
       "assets": {
