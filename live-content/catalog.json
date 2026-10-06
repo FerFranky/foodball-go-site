@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-06.9",
+  "revision": "2026-10-06.10",
   "min_client_version": "1.0.11",
   "characters": [
     {
@@ -276,6 +276,11 @@
         "es": "Copa Fast Food",
         "en": "Fast Food Cup"
       },
+      "art": {
+        "url": "https://ferfranky.github.io/foodball-go-site/live-content/churro/churro_club.webp",
+        "bytes": 105138,
+        "sha256": "f878bacbaaae8e4c7b66986518df9158459dc00008b3f419bf779e1ae50c8841"
+      },
       "participants": [
         "Burger",
         "Pizza",
@@ -295,6 +300,11 @@
       "name": {
         "es": "Copa Mexican Food",
         "en": "Mexican Food Cup"
+      },
+      "art": {
+        "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_club.webp",
+        "bytes": 93322,
+        "sha256": "137bc82b9b8a8cc4327cf390ddfeb06fe5c9d9f6bf6b78b2f70c28b1a5d2b5e9"
       },
       "participants": [
         "Taco",
