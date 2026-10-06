@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-06.4",
+  "revision": "2026-10-06.5",
   "min_client_version": "1.0.11",
   "characters": [
     {
@@ -38,18 +38,18 @@
         },
         "selection_default": {
           "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_default.png",
-          "bytes": 544832,
-          "sha256": "d19f37d987678352a491a753c971e4f69023fccaf627e87e7b36586efccf4dcb"
+          "bytes": 2080007,
+          "sha256": "cf857d0e7c30311fd815e707805f287a0e1209325c9e178050bf9d6ea8bf9861"
         },
         "selection_player": {
           "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_player.png",
-          "bytes": 544832,
-          "sha256": "d19f37d987678352a491a753c971e4f69023fccaf627e87e7b36586efccf4dcb"
+          "bytes": 1972151,
+          "sha256": "f9c9c3df842e15d76306d449f1ce4c0f91df16e26d73928b9602228e804055ed"
         },
         "selection_cpu": {
           "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_cpu.png",
-          "bytes": 544832,
-          "sha256": "d19f37d987678352a491a753c971e4f69023fccaf627e87e7b36586efccf4dcb"
+          "bytes": 2047314,
+          "sha256": "8729fb0f84b887608ea4d0372b25101c35219d58ab828b47b05120ace94a8d51"
         }
       },
       "story": {
@@ -67,7 +67,72 @@
           "nationality": "Mexico",
           "bio": "Every Day of the Dead, he takes the pitch to honor those who came before. With sugar on his crown and fire in his heart, he turns every goal into an offering of joy."
         }
-      }
+      },
+      "album_cards": [
+        {
+          "id": "pan_de_muerto_club",
+          "price": 140,
+          "copy": {
+            "es": {
+              "description": "El Guardián de la Ofrenda estrena uniforme tricolor para jugar bajo las luces del estadio.",
+              "badge": "Fútbol Club",
+              "title": "Pan de Muerto Fútbol Club"
+            },
+            "en": {
+              "description": "The Guardian of the Altar wears his tricolor kit beneath the stadium lights.",
+              "badge": "Football Club",
+              "title": "Pan de Muerto Football Club"
+            }
+          },
+          "asset": {
+            "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_club.png",
+            "bytes": 2721123,
+            "sha256": "1e481fb6741bc69bbf8a3fee76eb05ed26ab758e76c870bbe9c36f133802f419"
+          }
+        },
+        {
+          "id": "pan_de_muerto_ofrenda",
+          "price": 220,
+          "copy": {
+            "es": {
+              "description": "Entre cempasúchil, velas y recuerdos, protege la cancha con alegría de Día de Muertos.",
+              "badge": "La Ofrenda",
+              "title": "Pan de Muerto en la Ofrenda"
+            },
+            "en": {
+              "description": "Among marigolds, candles, and memories, he guards the pitch with Day of the Dead joy.",
+              "badge": "The Altar",
+              "title": "Pan de Muerto at the Altar"
+            }
+          },
+          "asset": {
+            "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_ofrenda.png",
+            "bytes": 2514350,
+            "sha256": "ddf99f329f3b837e46268f3e01a22171aafe5500d74aee5c1c7445fcfe69460c"
+          }
+        },
+        {
+          "id": "pan_de_muerto_fiesta",
+          "price": 300,
+          "copy": {
+            "es": {
+              "description": "Papel picado, fuegos artificiales y un remate que celebra a todo México.",
+              "badge": "Fiesta",
+              "title": "Pan de Muerto en Fiesta"
+            },
+            "en": {
+              "description": "Papel picado, fireworks, and a finishing shot that celebrates all of Mexico.",
+              "badge": "Fiesta",
+              "title": "Pan de Muerto Fiesta"
+            }
+          },
+          "asset": {
+            "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_fiesta.png",
+            "bytes": 2767205,
+            "sha256": "76dd70a18455abf79492fa97ec70936989e937758ecd14ef4488826fb671d410"
+          }
+        }
+      ]
     }
   ]
 }
