@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-06.8",
+  "revision": "2026-10-06.9",
   "min_client_version": "1.0.11",
   "characters": [
     {
@@ -263,6 +263,43 @@
             "sha256": "fdc38f255a7f6dae9f32d32ee6b98417956873816254743a2e1a63f53b43b6e7"
           }
         }
+      ]
+    }
+  ],
+  "tournaments": [
+    {
+      "id": "fast_foot",
+      "status": "published",
+      "min_client_version": "1.0.11",
+      "min_participants": 8,
+      "name": {
+        "es": "Copa Fast Food",
+        "en": "Fast Food Cup"
+      },
+      "participants": [
+        "Burger",
+        "Pizza",
+        "Fries",
+        "Taco",
+        "Hotdog",
+        "Icecream",
+        "Soda",
+        "churro"
+      ]
+    },
+    {
+      "id": "mexican_food",
+      "status": "published",
+      "min_client_version": "1.0.11",
+      "min_participants": 8,
+      "name": {
+        "es": "Copa Mexican Food",
+        "en": "Mexican Food Cup"
+      },
+      "participants": [
+        "Taco",
+        "Nacho",
+        "pan_de_muerto"
       ]
     }
   ]
