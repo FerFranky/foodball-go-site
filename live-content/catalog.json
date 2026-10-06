@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-06.5",
+  "revision": "2026-10-06.8",
   "min_client_version": "1.0.11",
   "characters": [
     {
@@ -17,39 +17,39 @@
       "min_client_version": "1.0.11",
       "assets": {
         "idle": {
-          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_idle.png",
-          "bytes": 544832,
-          "sha256": "d19f37d987678352a491a753c971e4f69023fccaf627e87e7b36586efccf4dcb"
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_idle.webp",
+          "bytes": 35360,
+          "sha256": "052de5b0f68a59df80ff35fe78195c1b01f87589782918a75116206bb0d46b3b"
         },
         "run_1": {
-          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_run_1.png",
-          "bytes": 565749,
-          "sha256": "ba1be114bb7d24cbde1a589958b93f03d10ea54e810f530483c8c3c3fa6c9d0e"
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_run_1.webp",
+          "bytes": 37760,
+          "sha256": "679f9f99664a35cc6c75ac2f5f440ab46877e196ce08b8b4322b1c66558c285a"
         },
         "run_2": {
-          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_run_2.png",
-          "bytes": 558464,
-          "sha256": "01d53e4a27cb1ae7102016306a8f1ad45b3297c9816fb34874b47c6868f39d71"
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_run_2.webp",
+          "bytes": 37322,
+          "sha256": "d62f7ec76da7078199e876d5c89930fc5a4af10dab810c5765fe4335b17afdac"
         },
         "jump": {
-          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_jump.png",
-          "bytes": 546850,
-          "sha256": "b20297cfc0dec93e3fa1a98c676551fd2ebf61f671d57fd5bb8ad0105719d46d"
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_jump.webp",
+          "bytes": 34336,
+          "sha256": "7c630ce93695b049372c55a3f0c819a3158f01483431b7fdaf8a96aca2f31012"
         },
         "selection_default": {
-          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_default.png",
-          "bytes": 2080007,
-          "sha256": "cf857d0e7c30311fd815e707805f287a0e1209325c9e178050bf9d6ea8bf9861"
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_default.webp",
+          "bytes": 67450,
+          "sha256": "d6ef9abddbf2d4096594d917a5dc62ffd917bafe6d186db2e523e4a2ebe5de4c"
         },
         "selection_player": {
-          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_player.png",
-          "bytes": 1972151,
-          "sha256": "f9c9c3df842e15d76306d449f1ce4c0f91df16e26d73928b9602228e804055ed"
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_player.webp",
+          "bytes": 68310,
+          "sha256": "ecb2e1448b9a48b0875ca6eeb0c18a8e1d155df67c985412144864b8a418a185"
         },
         "selection_cpu": {
-          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_cpu.png",
-          "bytes": 2047314,
-          "sha256": "8729fb0f84b887608ea4d0372b25101c35219d58ab828b47b05120ace94a8d51"
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_cpu.webp",
+          "bytes": 72048,
+          "sha256": "7b556279f1c72991a9fc6009deae2e246f3cfc1b5bc9749d43db0d4b2fb5ce7e"
         }
       },
       "story": {
@@ -85,9 +85,9 @@
             }
           },
           "asset": {
-            "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_club.png",
-            "bytes": 2721123,
-            "sha256": "1e481fb6741bc69bbf8a3fee76eb05ed26ab758e76c870bbe9c36f133802f419"
+            "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_club.webp",
+            "bytes": 93322,
+            "sha256": "137bc82b9b8a8cc4327cf390ddfeb06fe5c9d9f6bf6b78b2f70c28b1a5d2b5e9"
           }
         },
         {
@@ -106,9 +106,9 @@
             }
           },
           "asset": {
-            "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_ofrenda.png",
-            "bytes": 2514350,
-            "sha256": "ddf99f329f3b837e46268f3e01a22171aafe5500d74aee5c1c7445fcfe69460c"
+            "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_ofrenda.webp",
+            "bytes": 98148,
+            "sha256": "1766bb2e021c6b379c7fd40f2afdaadc7be0617c27b9ab68cb58800338f40a48"
           }
         },
         {
@@ -127,9 +127,140 @@
             }
           },
           "asset": {
-            "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_fiesta.png",
-            "bytes": 2767205,
-            "sha256": "76dd70a18455abf79492fa97ec70936989e937758ecd14ef4488826fb671d410"
+            "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_fiesta.webp",
+            "bytes": 121798,
+            "sha256": "17179f353ecd551fa1951dc9089bba9b3ccb8cdcdd4a3187b125d780f3ea5227"
+          }
+        }
+      ]
+    },
+    {
+      "id": "churro",
+      "status": "published",
+      "name": {
+        "es": "Churro Chispa",
+        "en": "Churro Spark"
+      },
+      "sprite_scale": [
+        0.22,
+        0.22
+      ],
+      "min_client_version": "1.0.11",
+      "assets": {
+        "idle": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/churro/churro_idle.webp",
+          "bytes": 23300,
+          "sha256": "57014422bb45364002a495aa97a5d0f904ce70f7541ef947712cdc46c4714de0"
+        },
+        "run_1": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/churro/churro_run_1.webp",
+          "bytes": 26438,
+          "sha256": "7ec005f95057922c53f56a102992ce32d6a7c15b2b8d0f6eb25438922a1e07a4"
+        },
+        "run_2": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/churro/churro_run_2.webp",
+          "bytes": 27118,
+          "sha256": "c4d5fbc9ed063bf816291d09538f1dc855c192f02e0b8d7be6428c1e6f129bac"
+        },
+        "jump": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/churro/churro_jump.webp",
+          "bytes": 27746,
+          "sha256": "3a4bd5b3f4f14c5455ebd6c512b8b562c3cac467b7c08c3051f710f11730a857"
+        },
+        "selection_default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/churro/churro_selection_default.webp",
+          "bytes": 71610,
+          "sha256": "9bf81ffc9f27f7dd9591afa90d2bd2ab73db91f3200e5c61ca4c5c0a5a3a0d81"
+        },
+        "selection_player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/churro/churro_selection_player.webp",
+          "bytes": 77614,
+          "sha256": "92f934abc73271f18a43b9fec1e93b8d650842be5112fe33daf28bc665895673"
+        },
+        "selection_cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/churro/churro_selection_cpu.webp",
+          "bytes": 77318,
+          "sha256": "7e300c6b80d81623fb59bf023c05a7c095889c6116d37b7e196b9f5d476746d1"
+        }
+      },
+      "story": {
+        "es": {
+          "title": "El Rayo de Canela",
+          "role": "Extremo Crujiente",
+          "trait": "Energía dulce",
+          "nationality": "España",
+          "bio": "Desde la feria hasta la cancha, acelera con azúcar y canela. Cuando el partido se aprieta, su chispa convierte cualquier rebote en una carrera inolvidable."
+        },
+        "en": {
+          "title": "The Cinnamon Bolt",
+          "role": "Crunchy Winger",
+          "trait": "Sweet energy",
+          "nationality": "Spain",
+          "bio": "From the fairground to the pitch, he sprints on sugar and cinnamon. When the match gets tight, his spark turns every rebound into an unforgettable run."
+        }
+      },
+      "album_cards": [
+        {
+          "id": "churro_club",
+          "price": 140,
+          "copy": {
+            "es": {
+              "title": "Churro Fútbol Club",
+              "description": "Cruje el césped con una arrancada dulce y un remate de canela.",
+              "badge": "Fútbol Club"
+            },
+            "en": {
+              "title": "Churro Football Club",
+              "description": "He crunches through the turf with a sweet run and a cinnamon finish.",
+              "badge": "Football Club"
+            }
+          },
+          "asset": {
+            "url": "https://ferfranky.github.io/foodball-go-site/live-content/churro/churro_club.webp",
+            "bytes": 105138,
+            "sha256": "f878bacbaaae8e4c7b66986518df9158459dc00008b3f419bf779e1ae50c8841"
+          }
+        },
+        {
+          "id": "churro_fair",
+          "price": 220,
+          "copy": {
+            "es": {
+              "title": "Churro en la Feria",
+              "description": "Entre papel picado y luces cálidas, convierte cada regate en fiesta.",
+              "badge": "Feria"
+            },
+            "en": {
+              "title": "Churro at the Fair",
+              "description": "Among papel picado and warm lights, he turns every dribble into a celebration.",
+              "badge": "Fair"
+            }
+          },
+          "asset": {
+            "url": "https://ferfranky.github.io/foodball-go-site/live-content/churro/churro_fair.webp",
+            "bytes": 117266,
+            "sha256": "f2e4f276ee18c619891c32cebb8966188ae5aa02949ee7a352c0668dc3979bc6"
+          }
+        },
+        {
+          "id": "churro_fiesta",
+          "price": 300,
+          "copy": {
+            "es": {
+              "title": "Churro en Victoria",
+              "description": "Celebra el gol ganador con confeti, energía y una sonrisa crujiente.",
+              "badge": "Victoria"
+            },
+            "en": {
+              "title": "Churro Victory",
+              "description": "He celebrates the winning goal with confetti, energy, and a crispy smile.",
+              "badge": "Victory"
+            }
+          },
+          "asset": {
+            "url": "https://ferfranky.github.io/foodball-go-site/live-content/churro/churro_fiesta.webp",
+            "bytes": 111916,
+            "sha256": "fdc38f255a7f6dae9f32d32ee6b98417956873816254743a2e1a63f53b43b6e7"
           }
         }
       ]
