@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-06.2",
+  "revision": "2026-10-06.3",
   "min_client_version": "1.0.11",
   "characters": [
     {
@@ -50,6 +50,22 @@
           "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_cpu.png",
           "bytes": 544832,
           "sha256": "d19f37d987678352a491a753c971e4f69023fccaf627e87e7b36586efccf4dcb"
+        }
+      },
+      "story": {
+        "es": {
+          "title": "El Guardián de la Ofrenda",
+          "role": "Delantero de la Ofrenda",
+          "trait": "Memoria dulce",
+          "nationality": "México",
+          "bio": "Cada Día de Muertos baja a la cancha para honrar a quienes ya partieron. Con azúcar en la cabeza y fuego en el corazón, convierte cada gol en una ofrenda de alegría."
+        },
+        "en": {
+          "title": "Guardian of the Altar",
+          "role": "Altar Forward",
+          "trait": "Sweet remembrance",
+          "nationality": "Mexico",
+          "bio": "Every Day of the Dead, he takes the pitch to honor those who came before. With sugar on his crown and fire in his heart, he turns every goal into an offering of joy."
         }
       }
     }
