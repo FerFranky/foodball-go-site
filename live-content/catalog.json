@@ -1,6 +1,57 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-06.1",
+  "revision": "2026-10-06.2",
   "min_client_version": "1.0.11",
-  "characters": []
+  "characters": [
+    {
+      "id": "pan_de_muerto",
+      "status": "published",
+      "name": {
+        "es": "Pan de Muerto",
+        "en": "Pan de Muerto"
+      },
+      "sprite_scale": [
+        0.34,
+        0.34
+      ],
+      "min_client_version": "1.0.11",
+      "assets": {
+        "idle": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_idle.png",
+          "bytes": 544832,
+          "sha256": "d19f37d987678352a491a753c971e4f69023fccaf627e87e7b36586efccf4dcb"
+        },
+        "run_1": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_run_1.png",
+          "bytes": 565749,
+          "sha256": "ba1be114bb7d24cbde1a589958b93f03d10ea54e810f530483c8c3c3fa6c9d0e"
+        },
+        "run_2": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_run_2.png",
+          "bytes": 558464,
+          "sha256": "01d53e4a27cb1ae7102016306a8f1ad45b3297c9816fb34874b47c6868f39d71"
+        },
+        "jump": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_jump.png",
+          "bytes": 546850,
+          "sha256": "b20297cfc0dec93e3fa1a98c676551fd2ebf61f671d57fd5bb8ad0105719d46d"
+        },
+        "selection_default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_default.png",
+          "bytes": 544832,
+          "sha256": "d19f37d987678352a491a753c971e4f69023fccaf627e87e7b36586efccf4dcb"
+        },
+        "selection_player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_player.png",
+          "bytes": 544832,
+          "sha256": "d19f37d987678352a491a753c971e4f69023fccaf627e87e7b36586efccf4dcb"
+        },
+        "selection_cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_cpu.png",
+          "bytes": 544832,
+          "sha256": "d19f37d987678352a491a753c971e4f69023fccaf627e87e7b36586efccf4dcb"
+        }
+      }
+    }
+  ]
 }
