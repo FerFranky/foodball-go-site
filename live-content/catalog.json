@@ -1,11 +1,15 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-08.1",
+  "revision": "2026-10-08.2",
   "min_client_version": "1.0.11",
   "characters": [
     {
       "id": "pan_de_muerto",
       "status": "published",
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": ["free_play", "tournament", "album"],
       "name": {
         "es": "Pancho de la Ofrenda",
         "en": "Pancho de la Ofrenda"
@@ -137,6 +141,10 @@
     {
       "id": "churro",
       "status": "published",
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": ["free_play", "tournament", "album"],
       "name": {
         "es": "Churro Chispa",
         "en": "Churro Spark"

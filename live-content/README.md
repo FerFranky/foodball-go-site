@@ -1,17 +1,26 @@
-# Live content
+# Catálogo de contenido vivo
 
-`catalog.json` is the public, versioned Foodball Go character catalog. It currently ships empty so the mobile client exercises its safe offline fallback until a reviewed character asset set is published.
+Cada personaje publicado puede declarar su disponibilidad directamente en
+`catalog.json`:
 
-## Publish a character
+```json
+{
+  "enabled": true,
+  "min_app_version": "1.0.11",
+  "content_rating": "all_ages",
+  "contexts": ["free_play", "tournament", "album"]
+}
+```
 
-1. Add exactly seven PNG, WebP, or JPG files under `live-content/<stable-id>/`: `idle`, `run_1`, `run_2`, `jump`, `selection_default`, `selection_player`, and `selection_cpu`.
-2. Calculate byte counts and SHA-256 values from the final uploaded files.
-3. Add a `published` record to `catalog.json` with localized `name.es` and `name.en`, `sprite_scale`, a minimum client version, and HTTPS URLs rooted at this repository's Pages domain.
-4. Open a PR. Review visual quality, hashes, path allowlist, total payload, Spanish and English names, and that no asset is executable content.
-5. Merge only after validating the client against the exact Pages URL.
+- `enabled` es booleano. Con `false`, el cliente no descarga assets ni muestra
+  al personaje.
+- `min_app_version` es la versión mínima del cliente. Se conserva
+  `min_client_version` como alias de compatibilidad para catálogos anteriores.
+- `content_rating` admite únicamente `all_ages`, `family` o `everyone`, porque
+  Foodball Go está clasificado para público familiar.
+- `contexts` acepta `free_play`, `tournament` y `album`. Omitirlo mantiene los
+  tres contextos para compatibilidad; una lista vacía oculta al personaje.
 
-## Roll back or retire
-
-- To roll back, restore a previous `catalog.json` revision and the matching files in a PR.
-- To retire a character, set its `status` to `disabled`; do not delete its files until active tournament snapshot support is deployed.
-- Never upload Godot scenes, PCKs, scripts, archives, binaries, secrets, keys, or production configuration to this directory.
+El cliente rechaza valores malformados o clasificaciones no familiares antes de
+descargar recursos. Al cambiar políticas, incrementa `revision` para invalidar
+correctamente la caché del catálogo.
