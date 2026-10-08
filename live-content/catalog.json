@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-06.11",
+  "revision": "2026-10-08.1",
   "min_client_version": "1.0.11",
   "characters": [
     {
       "id": "pan_de_muerto",
       "status": "published",
       "name": {
-        "es": "Pan de Muerto",
-        "en": "Pan de Muerto"
+        "es": "Pancho de la Ofrenda",
+        "en": "Pancho de la Ofrenda"
       },
       "sprite_scale": [
         0.22,
@@ -54,18 +54,18 @@
       },
       "story": {
         "es": {
-          "title": "El Guardián de la Ofrenda",
-          "role": "Delantero de la Ofrenda",
-          "trait": "Memoria dulce",
+          "title": "El 10 de la Ofrenda",
+          "role": "Mediapunta de cempasúchil",
+          "trait": "Corazón encendido",
           "nationality": "México",
-          "bio": "Cada Día de Muertos baja a la cancha para honrar a quienes ya partieron. Con azúcar en la cabeza y fuego en el corazón, convierte cada gol en una ofrenda de alegría."
+          "bio": "Cada Día de Muertos llega a la cancha entre cempasúchil y papel picado. Con azúcar en la cabeza y alegría en el corazón, reparte pases que celebran los recuerdos de su familia."
         },
         "en": {
-          "title": "Guardian of the Altar",
-          "role": "Altar Forward",
-          "trait": "Sweet remembrance",
+          "title": "The Ofrenda Playmaker",
+          "role": "Marigold playmaker",
+          "trait": "Bright-hearted",
           "nationality": "Mexico",
-          "bio": "Every Day of the Dead, he takes the pitch to honor those who came before. With sugar on his crown and fire in his heart, he turns every goal into an offering of joy."
+          "bio": "Every Day of the Dead, he reaches the pitch among marigolds and papel picado. With sugar on his crown and joy in his heart, he delivers passes that celebrate his family's memories."
         }
       },
       "album_cards": [
@@ -74,14 +74,14 @@
           "price": 140,
           "copy": {
             "es": {
-              "description": "El Guardián de la Ofrenda estrena uniforme tricolor para jugar bajo las luces del estadio.",
+              "description": "Pancho estrena uniforme tricolor para jugar bajo las luces del estadio.",
               "badge": "Fútbol Club",
-              "title": "Pan de Muerto Fútbol Club"
+              "title": "Pancho de la Ofrenda Fútbol Club"
             },
             "en": {
-              "description": "The Guardian of the Altar wears his tricolor kit beneath the stadium lights.",
+              "description": "Pancho wears his tricolor kit beneath the stadium lights.",
               "badge": "Football Club",
-              "title": "Pan de Muerto Football Club"
+              "title": "Pancho de la Ofrenda Football Club"
             }
           },
           "asset": {
@@ -97,12 +97,12 @@
             "es": {
               "description": "Entre cempasúchil, velas y recuerdos, protege la cancha con alegría de Día de Muertos.",
               "badge": "La Ofrenda",
-              "title": "Pan de Muerto en la Ofrenda"
+              "title": "Pancho de la Ofrenda: Noche de Cempasúchil"
             },
             "en": {
               "description": "Among marigolds, candles, and memories, he guards the pitch with Day of the Dead joy.",
               "badge": "The Altar",
-              "title": "Pan de Muerto at the Altar"
+              "title": "Pancho de la Ofrenda: Marigold Night"
             }
           },
           "asset": {
@@ -118,12 +118,12 @@
             "es": {
               "description": "Papel picado, fuegos artificiales y un remate que celebra a todo México.",
               "badge": "Fiesta",
-              "title": "Pan de Muerto en Fiesta"
+              "title": "Pancho de la Ofrenda en Fiesta"
             },
             "en": {
               "description": "Papel picado, fireworks, and a finishing shot that celebrates all of Mexico.",
               "badge": "Fiesta",
-              "title": "Pan de Muerto Fiesta"
+              "title": "Pancho de la Ofrenda Fiesta"
             }
           },
           "asset": {
