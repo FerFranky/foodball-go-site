@@ -24,3 +24,14 @@ Cada personaje publicado puede declarar su disponibilidad directamente en
 El cliente rechaza valores malformados o clasificaciones no familiares antes de
 descargar recursos. Al cambiar políticas, incrementa `revision` para invalidar
 correctamente la caché del catálogo.
+
+## Personajes locales existentes
+
+Usa el objeto superior `character_overrides` para administrar Burger, Pizza,
+Fries, Taco, Hotdog, Icecream, Nacho y Soda. Un override acepta los mismos
+cuatro campos de política y, opcionalmente, `album_cards`. La política filtra
+al personaje local, pero sus sprites de juego se conservan dentro de la app
+como respaldo sin conexión.
+
+Las tarjetas extra se descargan solo al abrir la página correspondiente del
+álbum. Cada personaje puede tener de 1 a 48 tarjetas remotas adicionales.

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-08.2",
+  "revision": "2026-10-08.3",
   "min_client_version": "1.0.11",
   "characters": [
     {
@@ -274,6 +274,16 @@
       ]
     }
   ],
+  "character_overrides": {
+    "Burger": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]},
+    "Pizza": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]},
+    "Fries": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]},
+    "Taco": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]},
+    "Hotdog": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]},
+    "Icecream": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]},
+    "Nacho": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]},
+    "Soda": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]}
+  },
   "tournaments": [
     {
       "id": "fast_foot",
