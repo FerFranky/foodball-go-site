@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-08.3",
+  "revision": "2026-10-09.1",
   "min_client_version": "1.0.11",
   "characters": [
     {
@@ -9,14 +9,18 @@
       "enabled": true,
       "min_app_version": "1.0.11",
       "content_rating": "all_ages",
-      "contexts": ["free_play", "tournament", "album"],
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ],
       "name": {
         "es": "Pancho de la Ofrenda",
         "en": "Pancho de la Ofrenda"
       },
       "sprite_scale": [
-        0.22,
-        0.22
+        0.25,
+        0.25
       ],
       "min_client_version": "1.0.11",
       "assets": {
@@ -144,14 +148,18 @@
       "enabled": true,
       "min_app_version": "1.0.11",
       "content_rating": "all_ages",
-      "contexts": ["free_play", "tournament", "album"],
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ],
       "name": {
         "es": "Churro Chispa",
         "en": "Churro Spark"
       },
       "sprite_scale": [
-        0.22,
-        0.22
+        0.25,
+        0.25
       ],
       "min_client_version": "1.0.11",
       "assets": {
@@ -275,14 +283,86 @@
     }
   ],
   "character_overrides": {
-    "Burger": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]},
-    "Pizza": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]},
-    "Fries": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]},
-    "Taco": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]},
-    "Hotdog": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]},
-    "Icecream": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]},
-    "Nacho": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]},
-    "Soda": {"enabled": true, "min_app_version": "1.0.11", "content_rating": "all_ages", "contexts": ["free_play", "tournament", "album"]}
+    "Burger": {
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ]
+    },
+    "Pizza": {
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ]
+    },
+    "Fries": {
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ]
+    },
+    "Taco": {
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ]
+    },
+    "Hotdog": {
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ]
+    },
+    "Icecream": {
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ]
+    },
+    "Nacho": {
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ]
+    },
+    "Soda": {
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ]
+    }
   },
   "tournaments": [
     {
