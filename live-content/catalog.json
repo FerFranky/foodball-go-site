@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-09.1",
+  "revision": "2026-10-09.2",
   "min_client_version": "1.0.11",
   "characters": [
     {
@@ -19,8 +19,8 @@
         "en": "Pancho de la Ofrenda"
       },
       "sprite_scale": [
-        0.25,
-        0.25
+        0.34,
+        0.34
       ],
       "min_client_version": "1.0.11",
       "assets": {
@@ -158,8 +158,8 @@
         "en": "Churro Spark"
       },
       "sprite_scale": [
-        0.25,
-        0.25
+        0.34,
+        0.34
       ],
       "min_client_version": "1.0.11",
       "assets": {
