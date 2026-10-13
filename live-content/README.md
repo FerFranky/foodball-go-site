@@ -16,14 +16,16 @@ Cada personaje publicado puede declarar su disponibilidad directamente en
   al personaje.
 - `min_app_version` es la versión mínima del cliente. Se conserva
   `min_client_version` como alias de compatibilidad para catálogos anteriores.
-- `content_rating` admite únicamente `all_ages`, `family` o `everyone`, porque
-  Foodball Go está clasificado para público familiar.
+- `content_rating` admite únicamente `all_ages`, `family` o `everyone`. Este
+  campo describe la idoneidad del contenido del catálogo; no reemplaza la
+  clasificación de audiencia de la app, que se administra en Google Play
+  Console.
 - `contexts` acepta `free_play`, `tournament` y `album`. Omitirlo mantiene los
   tres contextos para compatibilidad; una lista vacía oculta al personaje.
 
-El cliente rechaza valores malformados o clasificaciones no familiares antes de
-descargar recursos. Al cambiar políticas, incrementa `revision` para invalidar
-correctamente la caché del catálogo.
+El cliente rechaza valores malformados o clasificaciones no compatibles antes
+de descargar recursos. Al cambiar políticas, incrementa `revision` para
+invalidar correctamente la caché del catálogo.
 
 ## Personajes locales existentes
 
