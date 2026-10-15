@@ -3,6 +3,15 @@ name: Deploy GitHub Pages
 on:
   push:
     branches: [main]
+    paths:
+      - ".github/workflows/pages.yml"
+      - "live-content/**"
+      - "scripts/**"
+  pull_request:
+    paths:
+      - ".github/workflows/pages.yml"
+      - "live-content/**"
+      - "scripts/**"
   workflow_dispatch:
 
 permissions:
@@ -15,7 +24,25 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  validate-liveops:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate LiveOps catalog
+        run: |
+          python scripts/validate_liveops.py
+          python -m unittest scripts/test_validate_liveops.py
+
   deploy:
+    if: github.event_name != 'pull_request'
+    needs: validate-liveops
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

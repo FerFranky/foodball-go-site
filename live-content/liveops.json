@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "revision": "2026-10-15.1",
+  "min_client_version": "1.0.0",
+  "updated_at": "2026-10-15T18:00:00Z",
+  "seasons": [
+    {
+      "id": "fiesta_del_gol_2026",
+      "status": "published",
+      "starts_at": "2026-10-15T00:00:00Z",
+      "ends_at": "2026-11-30T23:59:59Z",
+      "sort_order": 10,
+      "copy": {
+        "es": {
+          "title": "Fiesta del gol",
+          "description": "Una temporada para celebrar cada remate, victoria y copa levantada."
+        },
+        "en": {
+          "title": "Goal Fiesta",
+          "description": "A season to celebrate every finish, win, and lifted cup."
+        }
+      },
+      "challenges": [
+        {
+          "id": "fiesta_diario_10_goles",
+          "cadence": "daily",
+          "starts_at": "2026-10-15T00:00:00Z",
+          "ends_at": "2026-11-30T23:59:59Z",
+          "sort_order": 10,
+          "copy": {
+            "es": {
+              "title": "Diez al día",
+              "description": "Anota 10 goles en Modo libre."
+            },
+            "en": {
+              "title": "Ten a day",
+              "description": "Score 10 goals in Free Play."
+            }
+          },
+          "objective": {
+            "event": "goal_scored",
+            "target": 10,
+            "filters": {
+              "game_modes": ["free_play"]
+            }
+          },
+          "reward": { "type": "coins", "amount": 25 }
+        },
+        {
+          "id": "fiesta_semanal_5_victorias",
+          "cadence": "weekly",
+          "starts_at": "2026-10-15T00:00:00Z",
+          "ends_at": "2026-11-30T23:59:59Z",
+          "sort_order": 20,
+          "copy": {
+            "es": {
+              "title": "Semana ganadora",
+              "description": "Consigue 5 victorias en cualquier modo."
+            },
+            "en": {
+              "title": "Winning week",
+              "description": "Earn 5 victories in any mode."
+            }
+          },
+          "objective": {
+            "event": "match_won",
+            "target": 5,
+            "filters": {
+              "game_modes": ["free_play", "tournament"]
+            }
+          },
+          "reward": { "type": "coins", "amount": 75 }
+        },
+        {
+          "id": "fiesta_pancho_25_goles",
+          "cadence": "season",
+          "starts_at": "2026-10-15T00:00:00Z",
+          "ends_at": "2026-11-30T23:59:59Z",
+          "sort_order": 30,
+          "copy": {
+            "es": {
+              "title": "Ofrenda ofensiva",
+              "description": "Anota 25 goles con Pancho de la Ofrenda."
+            },
+            "en": {
+              "title": "Attacking ofrenda",
+              "description": "Score 25 goals with Pancho de la Ofrenda."
+            }
+          },
+          "objective": {
+            "event": "goal_scored",
+            "target": 25,
+            "filters": {
+              "player_character_ids": ["pan_de_muerto"]
+            }
+          },
+          "reward": { "type": "coins", "amount": 150 }
+        },
+        {
+          "id": "fiesta_fast_foot_3_victorias",
+          "cadence": "season",
+          "starts_at": "2026-10-15T00:00:00Z",
+          "ends_at": "2026-11-30T23:59:59Z",
+          "sort_order": 40,
+          "copy": {
+            "es": {
+              "title": "Rumbo a la copa",
+              "description": "Gana 3 partidos en la Copa Fast Food."
+            },
+            "en": {
+              "title": "Road to the cup",
+              "description": "Win 3 matches in the Fast Food Cup."
+            }
+          },
+          "objective": {
+            "event": "tournament_match_won",
+            "target": 3,
+            "filters": {
+              "game_modes": ["tournament"],
+              "tournament_ids": ["fast_foot"]
+            }
+          },
+          "reward": { "type": "coins", "amount": 125 }
+        },
+        {
+          "id": "fiesta_mexican_food_campeon",
+          "cadence": "season",
+          "starts_at": "2026-10-15T00:00:00Z",
+          "ends_at": "2026-11-30T23:59:59Z",
+          "sort_order": 50,
+          "copy": {
+            "es": {
+              "title": "Sabor campeón",
+              "description": "Conquista la Copa Mexican Food."
+            },
+            "en": {
+              "title": "Champion flavor",
+              "description": "Conquer the Mexican Food Cup."
+            }
+          },
+          "objective": {
+            "event": "tournament_won",
+            "target": 1,
+            "filters": {
+              "game_modes": ["tournament"],
+              "tournament_ids": ["mexican_food"]
+            }
+          },
+          "reward": { "type": "coins", "amount": 250 }
+        }
+      ]
+    }
+  ],
+  "achievements": [
+    {
+      "id": "first_10_goals",
+      "sort_order": 10,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Rompe redes", "description": "Anota tus primeros 10 goles." },
+        "en": { "title": "Net breaker", "description": "Score your first 10 goals." }
+      },
+      "objective": { "event": "goal_scored", "target": 10 },
+      "reward": { "type": "coins", "amount": 50 }
+    },
+    {
+      "id": "first_100_goals",
+      "sort_order": 20,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Cañonero de cocina", "description": "Anota 100 goles." },
+        "en": { "title": "Kitchen cannon", "description": "Score 100 goals." }
+      },
+      "objective": { "event": "goal_scored", "target": 100 },
+      "reward": { "type": "coins", "amount": 200 }
+    },
+    {
+      "id": "first_win",
+      "sort_order": 30,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Primer bocado", "description": "Consigue tu primera victoria." },
+        "en": { "title": "First bite", "description": "Earn your first victory." }
+      },
+      "objective": { "event": "match_won", "target": 1 },
+      "reward": { "type": "coins", "amount": 40 }
+    },
+    {
+      "id": "own_goal_aware",
+      "sort_order": 40,
+      "visibility": "hidden_until_unlocked",
+      "copy": {
+        "es": { "title": "¡Era la otra portería!", "description": "Marca un autogol." },
+        "en": { "title": "Wrong goal!", "description": "Score an own goal." }
+      },
+      "objective": { "event": "own_goal_scored", "target": 1 },
+      "reward": { "type": "coins", "amount": 15 }
+    },
+    {
+      "id": "first_cup",
+      "sort_order": 50,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Mesa de campeones", "description": "Gana un torneo." },
+        "en": { "title": "Champions' table", "description": "Win a tournament." }
+      },
+      "objective": { "event": "tournament_won", "target": 1 },
+      "reward": { "type": "coins", "amount": 150 }
+    }
+  ]
+}

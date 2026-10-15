@@ -37,3 +37,52 @@ como respaldo sin conexión.
 
 Las tarjetas extra se descargan solo al abrir la página correspondiente del
 álbum. Cada personaje puede tener de 1 a 48 tarjetas remotas adicionales.
+
+## LiveOps: temporadas, retos y logros
+
+`liveops.json` es un manifiesto independiente para contenido que cambia con el
+tiempo. No se agregan temporadas a `catalog.json`: así una actualización de
+retos no invalida la caché de personajes, torneos ni tarjetas.
+
+URL pública contractual:
+
+```text
+https://ferfranky.github.io/foodball-go-site/live-content/liveops.json
+```
+
+El formato se describe en `liveops.schema.json` y se valida durante el deploy
+de Pages mediante `scripts/validate_liveops.py`. El contrato inicial usa:
+
+- una temporada con `id`, `status`, fechas UTC, textos `es`/`en`, orden y
+  retos;
+- retos de cadencia `daily`, `weekly` o `season`;
+- logros permanentes con visibilidad normal u oculta hasta desbloquearse;
+- objetivos de goles, autogoles, partidos, victorias y progreso de torneo;
+- filtros opcionales por personaje, modo (`free_play` o `tournament`) y copa;
+- recompensas de monedas. El progreso y la reclamación se guardan en el juego,
+  nunca en este sitio.
+
+### Publicar o editar una temporada
+
+1. Usa IDs minúsculos estables (`^[a-z0-9][a-z0-9_-]{2,63}$`). No reutilices
+   un ID con otro significado.
+2. Usa fechas ISO-8601 en UTC con sufijo `Z`. Las ventanas de los retos deben
+   quedar dentro de la ventana de su temporada; diario y semanal se reinician
+   en UTC.
+3. Incluye `copy.es` y `copy.en`, y referencia únicamente personajes y torneos
+   existentes en `catalog.json`.
+4. Para arte opcional, publica una URL HTTPS y su tamaño/sha256, igual que los
+   assets de personajes.
+5. Aumenta `revision` para todo cambio semántico. Conserva
+   `schema_version: 1` para cambios compatibles; un cambio incompatible exige
+   un nuevo esquema y soporte previo en el juego.
+6. Ejecuta antes del PR:
+
+   ```powershell
+   python scripts/validate_liveops.py
+   python -m unittest scripts/test_validate_liveops.py
+   ```
+
+Los tipos de objetivo nuevos se publican solo después de que una versión del
+juego los soporte. Site no recolecta perfiles, ranking, telemetría ni datos
+personales.
