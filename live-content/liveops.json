@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-15.1",
-  "min_client_version": "1.0.0",
-  "updated_at": "2026-10-15T18:00:00Z",
+  "revision": "2026-10-19.1",
+  "min_client_version": "1.0.11",
+  "updated_at": "2026-10-19T18:00:00Z",
   "seasons": [
     {
       "id": "fiesta_del_gol_2026",
@@ -206,6 +206,171 @@
       },
       "objective": { "event": "tournament_won", "target": 1 },
       "reward": { "type": "coins", "amount": 150 }
+    },
+    {
+      "id": "match_regular_10",
+      "sort_order": 60,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Ya calentaste", "description": "Juega 10 partidos." },
+        "en": { "title": "Warmed up", "description": "Play 10 matches." }
+      },
+      "objective": { "event": "match_completed", "target": 10 },
+      "reward": { "type": "coins", "amount": 60 }
+    },
+    {
+      "id": "match_regular_50",
+      "sort_order": 70,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Cancha conocida", "description": "Juega 50 partidos." },
+        "en": { "title": "Home turf", "description": "Play 50 matches." }
+      },
+      "objective": { "event": "match_completed", "target": 50 },
+      "reward": { "type": "coins", "amount": 180 }
+    },
+    {
+      "id": "winner_25",
+      "sort_order": 80,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Racha sabrosa", "description": "Consigue 25 victorias." },
+        "en": { "title": "Tasty streak", "description": "Earn 25 victories." }
+      },
+      "objective": { "event": "match_won", "target": 25 },
+      "reward": { "type": "coins", "amount": 160 }
+    },
+    {
+      "id": "goal_hundred_500",
+      "sort_order": 90,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Tormenta de goles", "description": "Anota 500 goles." },
+        "en": { "title": "Goal storm", "description": "Score 500 goals." }
+      },
+      "objective": { "event": "goal_scored", "target": 500 },
+      "reward": { "type": "coins", "amount": 750 }
+    },
+    {
+      "id": "churro_goal_25",
+      "sort_order": 100,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Chispa goleadora", "description": "Anota 25 goles con Churro Chispa." },
+        "en": { "title": "Spark scorer", "description": "Score 25 goals with Churro Spark." }
+      },
+      "objective": { "event": "goal_scored", "target": 25, "filters": { "player_character_ids": ["churro"] } },
+      "reward": { "type": "coins", "amount": 150 }
+    },
+    {
+      "id": "pancho_goal_50",
+      "sort_order": 110,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Goles de cempasúchil", "description": "Anota 50 goles con Pancho de la Ofrenda." },
+        "en": { "title": "Marigold goals", "description": "Score 50 goals with Pancho de la Ofrenda." }
+      },
+      "objective": { "event": "goal_scored", "target": 50, "filters": { "player_character_ids": ["pan_de_muerto"] } },
+      "reward": { "type": "coins", "amount": 260 }
+    },
+    {
+      "id": "cup_fast_foot",
+      "sort_order": 120,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Dueño del menú", "description": "Gana la Copa Fast Food." },
+        "en": { "title": "Menu master", "description": "Win the Fast Food Cup." }
+      },
+      "objective": { "event": "tournament_won", "target": 1, "filters": { "tournament_ids": ["fast_foot"] } },
+      "reward": { "type": "coins", "amount": 240 }
+    },
+    {
+      "id": "cup_mexican_food",
+      "sort_order": 130,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Sabor de campeonato", "description": "Gana la Copa Mexican Food." },
+        "en": { "title": "Championship flavor", "description": "Win the Mexican Food Cup." }
+      },
+      "objective": { "event": "tournament_won", "target": 1, "filters": { "tournament_ids": ["mexican_food"] } },
+      "reward": { "type": "coins", "amount": 240 }
+    },
+    {
+      "id": "tournament_veteran",
+      "sort_order": 140,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Coleccionista de copas", "description": "Completa 5 torneos." },
+        "en": { "title": "Cup collector", "description": "Complete 5 tournaments." }
+      },
+      "objective": { "event": "tournament_completed", "target": 5 },
+      "reward": { "type": "coins", "amount": 400 }
+    },
+    {
+      "id": "album_first_sticker",
+      "sort_order": 150,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Primera estampita", "description": "Compra tu primer sticker del Álbum futbolero." },
+        "en": { "title": "First sticker", "description": "Buy your first Football Album sticker." }
+      },
+      "objective": { "event": "sticker_purchased", "target": 1 },
+      "reward": { "type": "coins", "amount": 30 }
+    },
+    {
+      "id": "album_sticker_5",
+      "sort_order": 160,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Sobre abierto", "description": "Compra 5 stickers del Álbum futbolero." },
+        "en": { "title": "Open pack", "description": "Buy 5 Football Album stickers." }
+      },
+      "objective": { "event": "sticker_purchased", "target": 5 },
+      "reward": { "type": "coins", "amount": 100 }
+    },
+    {
+      "id": "album_sticker_15",
+      "sort_order": 170,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Álbum en marcha", "description": "Compra 15 stickers del Álbum futbolero." },
+        "en": { "title": "Album underway", "description": "Buy 15 Football Album stickers." }
+      },
+      "objective": { "event": "sticker_purchased", "target": 15 },
+      "reward": { "type": "coins", "amount": 280 }
+    },
+    {
+      "id": "album_churro_club",
+      "sort_order": 180,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Churro titular", "description": "Compra la tarjeta Churro Fútbol Club." },
+        "en": { "title": "Churro starter", "description": "Buy the Churro Football Club card." }
+      },
+      "objective": { "event": "sticker_purchased", "target": 1, "filters": { "collectible_ids": ["churro_club"] } },
+      "reward": { "type": "coins", "amount": 70 }
+    },
+    {
+      "id": "album_pancho_ofrenda",
+      "sort_order": 190,
+      "visibility": "visible",
+      "copy": {
+        "es": { "title": "Recuerdo dorado", "description": "Compra la tarjeta Noche de Cempasúchil." },
+        "en": { "title": "Golden memory", "description": "Buy the Marigold Night card." }
+      },
+      "objective": { "event": "sticker_purchased", "target": 1, "filters": { "collectible_ids": ["pan_de_muerto_ofrenda"] } },
+      "reward": { "type": "coins", "amount": 100 }
+    },
+    {
+      "id": "album_churro_set",
+      "sort_order": 200,
+      "visibility": "hidden_until_unlocked",
+      "copy": {
+        "es": { "title": "Colección crujiente", "description": "Compra 3 stickers de Churro Chispa." },
+        "en": { "title": "Crunchy collection", "description": "Buy 3 Churro Spark stickers." }
+      },
+      "objective": { "event": "sticker_purchased", "target": 3, "filters": { "player_character_ids": ["churro"] } },
+      "reward": { "type": "coins", "amount": 220 }
     }
   ]
 }

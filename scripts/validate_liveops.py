@@ -24,6 +24,7 @@ EVENTS = {
     "tournament_completed",
     "tournament_won",
     "tournament_round_reached",
+    "sticker_purchased",
 }
 TOURNAMENT_EVENTS = {
     "tournament_match_won",
@@ -128,7 +129,7 @@ def validate_reference_ids(values: Any, allowed: set[str], path: str) -> None:
             raise ValidationError(f"{path}[{index}] references unknown id '{identifier}'")
 
 
-def validate_objective(value: Any, path: str, character_ids: set[str], tournament_ids: set[str]) -> None:
+def validate_objective(value: Any, path: str, character_ids: set[str], tournament_ids: set[str], collectible_ids: set[str]) -> None:
     objective = expect_object(value, path)
     reject_unknown_keys(objective, {"event", "target", "filters", "round"}, path)
     event = expect_string(objective.get("event"), f"{path}.event")
@@ -145,11 +146,13 @@ def validate_objective(value: Any, path: str, character_ids: set[str], tournamen
 
     filters = objective.get("filters", {})
     filters = expect_object(filters, f"{path}.filters")
-    reject_unknown_keys(filters, {"player_character_ids", "game_modes", "tournament_ids"}, f"{path}.filters")
+    reject_unknown_keys(filters, {"player_character_ids", "game_modes", "tournament_ids", "collectible_ids"}, f"{path}.filters")
     if "player_character_ids" in filters:
         validate_reference_ids(filters["player_character_ids"], character_ids, f"{path}.filters.player_character_ids")
     if "tournament_ids" in filters:
         validate_reference_ids(filters["tournament_ids"], tournament_ids, f"{path}.filters.tournament_ids")
+    if "collectible_ids" in filters:
+        validate_reference_ids(filters["collectible_ids"], collectible_ids, f"{path}.filters.collectible_ids")
     if "game_modes" in filters:
         modes = expect_list(filters["game_modes"], f"{path}.filters.game_modes")
         if not modes:
@@ -195,6 +198,14 @@ def validate_liveops(liveops: dict[str, Any], content_catalog: dict[str, Any]) -
     character_ids = {identifier for identifier in character_ids if isinstance(identifier, str)}
     tournament_ids = {entry.get("id") for entry in content_catalog.get("tournaments", []) if isinstance(entry, dict)}
     tournament_ids = {identifier for identifier in tournament_ids if isinstance(identifier, str)}
+    collectible_ids = {
+        card.get("id")
+        for character in content_catalog.get("characters", [])
+        if isinstance(character, dict)
+        for card in character.get("album_cards", [])
+        if isinstance(card, dict)
+    }
+    collectible_ids = {identifier for identifier in collectible_ids if isinstance(identifier, str)}
 
     seen_ids: set[str] = set()
     seasons = expect_list(liveops.get("seasons"), "liveops.seasons")
@@ -230,7 +241,7 @@ def validate_liveops(liveops: dict[str, Any], content_catalog: dict[str, Any]) -
             if isinstance(challenge.get("sort_order"), bool) or not isinstance(challenge.get("sort_order"), int) or challenge["sort_order"] < 0:
                 raise ValidationError(f"{challenge_path}.sort_order must be a non-negative integer")
             validate_copy(challenge.get("copy"), f"{challenge_path}.copy")
-            validate_objective(challenge.get("objective"), f"{challenge_path}.objective", character_ids, tournament_ids)
+            validate_objective(challenge.get("objective"), f"{challenge_path}.objective", character_ids, tournament_ids, collectible_ids)
             validate_reward(challenge.get("reward"), f"{challenge_path}.reward")
 
     achievements = expect_list(liveops.get("achievements"), "liveops.achievements")
@@ -247,7 +258,7 @@ def validate_liveops(liveops: dict[str, Any], content_catalog: dict[str, Any]) -
         if isinstance(achievement.get("sort_order"), bool) or not isinstance(achievement.get("sort_order"), int) or achievement["sort_order"] < 0:
             raise ValidationError(f"{path}.sort_order must be a non-negative integer")
         validate_copy(achievement.get("copy"), f"{path}.copy")
-        validate_objective(achievement.get("objective"), f"{path}.objective", character_ids, tournament_ids)
+        validate_objective(achievement.get("objective"), f"{path}.objective", character_ids, tournament_ids, collectible_ids)
         validate_reward(achievement.get("reward"), f"{path}.reward")
 
 

@@ -44,6 +44,12 @@ class LiveOpsValidationTests(unittest.TestCase):
         with self.assertRaisesRegex(ValidationError, "SHA-256"):
             validate_liveops(invalid, self.catalog)
 
+    def test_unknown_collectible_is_rejected(self) -> None:
+        invalid = copy.deepcopy(self.liveops)
+        invalid["achievements"][0]["objective"]["filters"] = {"collectible_ids": ["missing_card"]}
+        with self.assertRaisesRegex(ValidationError, "unknown id"):
+            validate_liveops(invalid, self.catalog)
+
 
 if __name__ == "__main__":
     unittest.main()
