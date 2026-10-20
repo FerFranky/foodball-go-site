@@ -57,8 +57,10 @@ de Pages mediante `scripts/validate_liveops.py`. El contrato inicial usa:
   retos;
 - retos de cadencia `daily`, `weekly` o `season`;
 - logros permanentes con visibilidad normal u oculta hasta desbloquearse;
-- objetivos de goles, autogoles, partidos, victorias y progreso de torneo;
-- filtros opcionales por personaje, modo (`free_play` o `tournament`) y copa;
+- objetivos de goles, autogoles, partidos, victorias, progreso de torneo y
+  compra de stickers (`sticker_purchased`);
+- filtros opcionales por personaje, modo (`free_play` o `tournament`), copa y
+  tarjeta del álbum (`collectible_ids`);
 - recompensas de monedas. El progreso y la reclamación se guardan en el juego,
   nunca en este sitio.
 
@@ -69,8 +71,9 @@ de Pages mediante `scripts/validate_liveops.py`. El contrato inicial usa:
 2. Usa fechas ISO-8601 en UTC con sufijo `Z`. Las ventanas de los retos deben
    quedar dentro de la ventana de su temporada; diario y semanal se reinician
    en UTC.
-3. Incluye `copy.es` y `copy.en`, y referencia únicamente personajes y torneos
-   existentes en `catalog.json`.
+3. Incluye `copy.es` y `copy.en`, y referencia únicamente personajes, torneos
+   y tarjetas remotas existentes en `catalog.json`. Los IDs de tarjeta son los
+   de `album_cards[].id`.
 4. Para arte opcional, publica una URL HTTPS y su tamaño/sha256, igual que los
    assets de personajes.
 5. Aumenta `revision` para todo cambio semántico. Conserva

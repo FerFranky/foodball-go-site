@@ -49,7 +49,8 @@
       "properties": {
         "player_character_ids": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } },
         "game_modes": { "type": "array", "minItems": 1, "items": { "enum": ["free_play", "tournament"] } },
-        "tournament_ids": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } }
+        "tournament_ids": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } },
+        "collectible_ids": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/id" } }
       }
     },
     "objective": {
@@ -66,7 +67,8 @@
             "tournament_match_won",
             "tournament_completed",
             "tournament_won",
-            "tournament_round_reached"
+            "tournament_round_reached",
+            "sticker_purchased"
           ]
         },
         "target": { "type": "integer", "minimum": 1 },
