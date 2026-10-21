@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-21.1",
+  "revision": "2026-10-21.2",
   "min_client_version": "1.0.0",
-  "updated_at": "2026-10-21T12:00:00Z",
+  "updated_at": "2026-10-21T18:00:00Z",
   "seasons": [
     {
       "id": "fiesta_del_gol_2026",
-      "status": "archived",
+      "status": "scheduled",
       "starts_at": "2026-10-15T00:00:00Z",
       "ends_at": "2026-11-30T23:59:59Z",
       "sort_order": 10,
