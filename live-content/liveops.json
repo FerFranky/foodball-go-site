@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-21.2",
+  "revision": "2026-10-21.3",
   "min_client_version": "1.0.0",
-  "updated_at": "2026-10-21T18:00:00Z",
+  "updated_at": "2026-10-21T19:00:00Z",
   "seasons": [
     {
       "id": "fiesta_del_gol_2026",
@@ -194,6 +194,45 @@
           "reward": { "type": "coins", "amount": 60 }
         },
         {
+          "id": "muertos_diario_partidos_completados",
+          "cadence": "daily",
+          "starts_at": "2026-10-21T00:00:00Z",
+          "ends_at": "2026-11-15T23:59:59Z",
+          "sort_order": 15,
+          "copy": {
+            "es": { "title": "Visita a la ofrenda", "description": "Completa 2 partidos en cualquier modo." },
+            "en": { "title": "Visit the ofrenda", "description": "Complete 2 matches in any mode." }
+          },
+          "objective": { "event": "match_completed", "target": 2, "filters": { "game_modes": ["free_play", "tournament"] } },
+          "reward": { "type": "coins", "amount": 15 }
+        },
+        {
+          "id": "muertos_diario_una_victoria",
+          "cadence": "daily",
+          "starts_at": "2026-10-21T00:00:00Z",
+          "ends_at": "2026-11-15T23:59:59Z",
+          "sort_order": 18,
+          "copy": {
+            "es": { "title": "Calaverita ganadora", "description": "Consigue una victoria en Modo libre." },
+            "en": { "title": "Winning calaverita", "description": "Earn one Free Play victory." }
+          },
+          "objective": { "event": "match_won", "target": 1, "filters": { "game_modes": ["free_play"] } },
+          "reward": { "type": "coins", "amount": 20 }
+        },
+        {
+          "id": "muertos_semanal_copa_mexicana",
+          "cadence": "weekly",
+          "starts_at": "2026-10-21T00:00:00Z",
+          "ends_at": "2026-11-15T23:59:59Z",
+          "sort_order": 25,
+          "copy": {
+            "es": { "title": "Rumbo al altar", "description": "Gana 2 partidos en la Copa Mexican Food." },
+            "en": { "title": "Road to the altar", "description": "Win 2 matches in the Mexican Food Cup." }
+          },
+          "objective": { "event": "tournament_match_won", "target": 2, "filters": { "game_modes": ["tournament"], "tournament_ids": ["mexican_food"] } },
+          "reward": { "type": "coins", "amount": 90 }
+        },
+        {
           "id": "muertos_pancho_15_goles",
           "cadence": "season",
           "starts_at": "2026-10-21T00:00:00Z",
@@ -218,6 +257,45 @@
           },
           "objective": { "event": "tournament_won", "target": 1, "filters": { "game_modes": ["tournament"], "tournament_ids": ["mexican_food"] } },
           "reward": { "type": "coins", "amount": 250 }
+        },
+        {
+          "id": "muertos_30_goles",
+          "cadence": "season",
+          "starts_at": "2026-10-21T00:00:00Z",
+          "ends_at": "2026-11-15T23:59:59Z",
+          "sort_order": 50,
+          "copy": {
+            "es": { "title": "Noche de goles", "description": "Anota 30 goles en cualquier modo." },
+            "en": { "title": "Night of goals", "description": "Score 30 goals in any mode." }
+          },
+          "objective": { "event": "goal_scored", "target": 30, "filters": { "game_modes": ["free_play", "tournament"] } },
+          "reward": { "type": "coins", "amount": 180 }
+        },
+        {
+          "id": "muertos_10_victorias",
+          "cadence": "season",
+          "starts_at": "2026-10-21T00:00:00Z",
+          "ends_at": "2026-11-15T23:59:59Z",
+          "sort_order": 60,
+          "copy": {
+            "es": { "title": "Leyenda de la cancha", "description": "Consigue 10 victorias en cualquier modo." },
+            "en": { "title": "Pitch legend", "description": "Earn 10 victories in any mode." }
+          },
+          "objective": { "event": "match_won", "target": 10, "filters": { "game_modes": ["free_play", "tournament"] } },
+          "reward": { "type": "coins", "amount": 200 }
+        },
+        {
+          "id": "muertos_2_autogoles",
+          "cadence": "season",
+          "starts_at": "2026-10-21T00:00:00Z",
+          "ends_at": "2026-11-15T23:59:59Z",
+          "sort_order": 70,
+          "copy": {
+            "es": { "title": "Travesura del más allá", "description": "Marca 2 autogoles." },
+            "en": { "title": "Beyond the veil", "description": "Score 2 own goals." }
+          },
+          "objective": { "event": "own_goal_scored", "target": 2 },
+          "reward": { "type": "coins", "amount": 80 }
         }
       ]
     }
