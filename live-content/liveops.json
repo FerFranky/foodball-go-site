@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-15.1",
+  "revision": "2026-10-21.1",
   "min_client_version": "1.0.0",
-  "updated_at": "2026-10-15T18:00:00Z",
+  "updated_at": "2026-10-21T12:00:00Z",
   "seasons": [
     {
       "id": "fiesta_del_gol_2026",
-      "status": "published",
+      "status": "archived",
       "starts_at": "2026-10-15T00:00:00Z",
       "ends_at": "2026-11-30T23:59:59Z",
       "sort_order": 10,
@@ -146,6 +146,77 @@
               "tournament_ids": ["mexican_food"]
             }
           },
+          "reward": { "type": "coins", "amount": 250 }
+        }
+      ]
+    },
+    {
+      "id": "dia_de_muertos_2026",
+      "status": "published",
+      "starts_at": "2026-10-21T00:00:00Z",
+      "ends_at": "2026-11-15T23:59:59Z",
+      "sort_order": 20,
+      "copy": {
+        "es": {
+          "title": "Día de Muertos",
+          "description": "Celebra la tradición con goles, victorias y una ofrenda futbolera."
+        },
+        "en": {
+          "title": "Day of the Dead",
+          "description": "Celebrate the tradition with goals, wins, and a football ofrenda."
+        }
+      },
+      "challenges": [
+        {
+          "id": "muertos_diario_5_goles",
+          "cadence": "daily",
+          "starts_at": "2026-10-21T00:00:00Z",
+          "ends_at": "2026-11-15T23:59:59Z",
+          "sort_order": 10,
+          "copy": {
+            "es": { "title": "Velitas goleadoras", "description": "Anota 5 goles en Modo libre." },
+            "en": { "title": "Goal candles", "description": "Score 5 goals in Free Play." }
+          },
+          "objective": { "event": "goal_scored", "target": 5, "filters": { "game_modes": ["free_play"] } },
+          "reward": { "type": "coins", "amount": 20 }
+        },
+        {
+          "id": "muertos_semanal_3_victorias",
+          "cadence": "weekly",
+          "starts_at": "2026-10-21T00:00:00Z",
+          "ends_at": "2026-11-15T23:59:59Z",
+          "sort_order": 20,
+          "copy": {
+            "es": { "title": "Camino de cempasúchil", "description": "Consigue 3 victorias en cualquier modo." },
+            "en": { "title": "Marigold path", "description": "Earn 3 victories in any mode." }
+          },
+          "objective": { "event": "match_won", "target": 3, "filters": { "game_modes": ["free_play", "tournament"] } },
+          "reward": { "type": "coins", "amount": 60 }
+        },
+        {
+          "id": "muertos_pancho_15_goles",
+          "cadence": "season",
+          "starts_at": "2026-10-21T00:00:00Z",
+          "ends_at": "2026-11-15T23:59:59Z",
+          "sort_order": 30,
+          "copy": {
+            "es": { "title": "Pancho en la ofrenda", "description": "Anota 15 goles con Pancho de la Ofrenda." },
+            "en": { "title": "Pancho at the ofrenda", "description": "Score 15 goals with Pancho de la Ofrenda." }
+          },
+          "objective": { "event": "goal_scored", "target": 15, "filters": { "player_character_ids": ["pan_de_muerto"] } },
+          "reward": { "type": "coins", "amount": 140 }
+        },
+        {
+          "id": "muertos_mexican_food_copa",
+          "cadence": "season",
+          "starts_at": "2026-10-21T00:00:00Z",
+          "ends_at": "2026-11-15T23:59:59Z",
+          "sort_order": 40,
+          "copy": {
+            "es": { "title": "Altar de campeones", "description": "Conquista la Copa Mexican Food." },
+            "en": { "title": "Champions' altar", "description": "Conquer the Mexican Food Cup." }
+          },
+          "objective": { "event": "tournament_won", "target": 1, "filters": { "game_modes": ["tournament"], "tournament_ids": ["mexican_food"] } },
           "reward": { "type": "coins", "amount": 250 }
         }
       ]
