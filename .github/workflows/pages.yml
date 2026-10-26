@@ -37,6 +37,7 @@ jobs:
 
       - name: Validate LiveOps catalog
         run: |
+          python scripts/validate_catalog.py
           python scripts/validate_liveops.py
           python -m unittest scripts/test_validate_liveops.py
 
