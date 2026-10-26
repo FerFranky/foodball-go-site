@@ -1,6 +1,6 @@
 # Mexican Food: ampliación de personajes
 
-Revisión del catálogo: `2026-10-26.1`. Issue: #29.
+Revisión del catálogo: `2026-10-26.2`. Issue: #29.
 
 | ID estable | Nombre | Directorio de assets |
 | --- | --- | --- |
@@ -13,7 +13,7 @@ Revisión del catálogo: `2026-10-26.1`. Issue: #29.
 Cada directorio contiene 8 WebP: `idle`, `run_1`, `run_2`, `jump`,
 `selection_default`, `selection_player`, `selection_cpu` y `club`.
 Los sprites tienen lienzo transparente de 512×341, altura visible de 300 px
-y escala de cliente 0.34. Las selecciones son de 512×512 y la tarjeta de club
+y escala de cliente 0.44 (29 % mayor que la escala inicial de 0.34). Las selecciones son de 512×512 y la tarjeta de club
 es de 512×768. Las variantes normal/jugador/CPU usan iluminación azul/verde/roja.
 Se conserva el alfa generado y se comprime el arte para distribución remota.
 
