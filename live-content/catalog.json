@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-09.2",
+  "revision": "2026-10-26.1",
   "min_client_version": "1.0.11",
   "characters": [
     {
@@ -280,6 +280,491 @@
           }
         }
       ]
+    },
+    {
+      "name": {
+        "es": "Nopalín",
+        "en": "Nopalin"
+      },
+      "story": {
+        "es": {
+          "title": "El Guardián del Desierto",
+          "role": "Defensa de penca firme",
+          "trait": "Noble e incansable",
+          "nationality": "México",
+          "bio": "Del desierto mexicano a la cancha, Nopalín defiende con paciencia y juega en equipo. Sus pencas celebran cada gol y su corazón verde nunca se rinde."
+        },
+        "en": {
+          "title": "Guardian of the Desert",
+          "role": "Steady cactus defender",
+          "trait": "Loyal and tireless",
+          "nationality": "Mexico",
+          "bio": "From the Mexican desert to the pitch, Nopalin defends patiently and plays for the team. His cactus paddles celebrate every goal and his green heart never gives up."
+        }
+      },
+      "id": "nopal",
+      "status": "published",
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "min_client_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ],
+      "sprite_scale": [
+        0.34,
+        0.34
+      ],
+      "album_cards": [
+        {
+          "id": "nopal_club",
+          "price": 140,
+          "copy": {
+            "es": {
+              "title": "Nopalín Fútbol Club",
+              "description": "Nopalín lleva el sabor de México a la cancha bajo las luces del estadio.",
+              "badge": "Fútbol Club"
+            },
+            "en": {
+              "title": "Nopalin Football Club",
+              "description": "Nopalin brings the flavor of Mexico to the pitch under the stadium lights.",
+              "badge": "Football Club"
+            }
+          },
+          "asset": {
+            "url": "https://ferfranky.github.io/foodball-go-site/live-content/nopal/nopal_club.webp",
+            "bytes": 158484,
+            "sha256": "f0396835bbf132b93a0bec22e527aeae69004504a288e2b8bf91570d99c9963d"
+          }
+        }
+      ],
+      "assets": {
+        "idle": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/nopal/nopal_idle.webp",
+          "bytes": 27972,
+          "sha256": "0cd87e5f7caef96fc4429c715abef30c8ac57b563a56080b05539e4ec03982b1"
+        },
+        "run_1": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/nopal/nopal_run_1.webp",
+          "bytes": 31372,
+          "sha256": "241f47fdb33fab88ef95c35e28466e1fd2d9d179e09e23d60aee3d32174c12f6"
+        },
+        "run_2": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/nopal/nopal_run_2.webp",
+          "bytes": 25090,
+          "sha256": "41d1b088997abda37d123c13dd5d0ce2653462aec8848afc6d054195479a4033"
+        },
+        "jump": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/nopal/nopal_jump.webp",
+          "bytes": 32486,
+          "sha256": "47d899182607aaac31db0f7c87a5de4a227c76ae0a70d2b2b3284d76494fb608"
+        },
+        "selection_default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/nopal/nopal_selection_default.webp",
+          "bytes": 91864,
+          "sha256": "15a82206a72ddb5ba5a13ffc5ed1a00171772727082776137ac46c7b116bf9b6"
+        },
+        "selection_player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/nopal/nopal_selection_player.webp",
+          "bytes": 90628,
+          "sha256": "bea75cdf3fcf52e13d52c4ecf38f4f4dd70f5dbe30cffec83a5ba49c5cb45461"
+        },
+        "selection_cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/nopal/nopal_selection_cpu.webp",
+          "bytes": 91594,
+          "sha256": "db53011079c54a887ad2875ca981e9a1a0817c4559d3e87e000f3eb8b4abc78c"
+        }
+      }
+    },
+    {
+      "name": {
+        "es": "Elote el Explosivo",
+        "en": "Elote the Explosive"
+      },
+      "story": {
+        "es": {
+          "title": "El Crack de la Esquina",
+          "role": "Delantero con picante",
+          "trait": "Alegría explosiva",
+          "nationality": "México",
+          "bio": "Con mayonesa, queso y chile, Elote lleva el sabor de la calle a cada partido. Acelera entre rivales y convierte cada remate en una fiesta de barrio."
+        },
+        "en": {
+          "title": "The Street-Corner Star",
+          "role": "Spicy striker",
+          "trait": "Explosive joy",
+          "nationality": "Mexico",
+          "bio": "With mayo, cheese and chili, Elote brings Mexican street flavor to every match. He races past rivals and turns every shot into a neighborhood celebration."
+        }
+      },
+      "id": "elote_preparado",
+      "status": "published",
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "min_client_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ],
+      "sprite_scale": [
+        0.34,
+        0.34
+      ],
+      "album_cards": [
+        {
+          "id": "elote_preparado_club",
+          "price": 140,
+          "copy": {
+            "es": {
+              "title": "Elote el Explosivo Fútbol Club",
+              "description": "Elote el Explosivo lleva el sabor de México a la cancha bajo las luces del estadio.",
+              "badge": "Fútbol Club"
+            },
+            "en": {
+              "title": "Elote the Explosive Football Club",
+              "description": "Elote the Explosive brings the flavor of Mexico to the pitch under the stadium lights.",
+              "badge": "Football Club"
+            }
+          },
+          "asset": {
+            "url": "https://ferfranky.github.io/foodball-go-site/live-content/elote_preparado/elote_preparado_club.webp",
+            "bytes": 172678,
+            "sha256": "24ff271d08c728e27863813d54a835c7d16bc396ca323a71857cf5933c2df96c"
+          }
+        }
+      ],
+      "assets": {
+        "idle": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/elote_preparado/elote_preparado_idle.webp",
+          "bytes": 25248,
+          "sha256": "f6951b3b5aeee9adc9cb262510f4f5e619603dff4eb147035840ec6b16ebda44"
+        },
+        "run_1": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/elote_preparado/elote_preparado_run_1.webp",
+          "bytes": 25402,
+          "sha256": "b9a289c929736dc0193654f47f31fcdc975ae495a4df725f233e70aeddc9429b"
+        },
+        "run_2": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/elote_preparado/elote_preparado_run_2.webp",
+          "bytes": 21952,
+          "sha256": "c1a65949ce91ec6d161a902e4a2b43fee6db5ef59762dc52a3585aca55307c88"
+        },
+        "jump": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/elote_preparado/elote_preparado_jump.webp",
+          "bytes": 26208,
+          "sha256": "12e9a834a3acd0f3c63e0eaf8fd62eee6cdbc4b74ac4824a4c5122d3d95fdab1"
+        },
+        "selection_default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/elote_preparado/elote_preparado_selection_default.webp",
+          "bytes": 95834,
+          "sha256": "2e469b483a9e769aa2533becbc34c2b9c5d163a00d5c3988ba42d3961d3cdc15"
+        },
+        "selection_player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/elote_preparado/elote_preparado_selection_player.webp",
+          "bytes": 97820,
+          "sha256": "8769ee35f6004d2280b8add0c572becccbf8df9d7a354ec559a088ec88d87a9a"
+        },
+        "selection_cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/elote_preparado/elote_preparado_selection_cpu.webp",
+          "bytes": 100158,
+          "sha256": "dc9a3aed035877b5d144d135bfaa35d145b04f35097c53bd161df6e2d1ee57a7"
+        }
+      }
+    },
+    {
+      "name": {
+        "es": "Don Pozolazo",
+        "en": "Don Pozolazo"
+      },
+      "story": {
+        "es": {
+          "title": "El Capitán de la Mesa",
+          "role": "Mediocampista de tradición",
+          "trait": "Generoso y valiente",
+          "nationality": "México",
+          "bio": "Nacido entre celebraciones y mesas compartidas, Don Pozolazo reúne al equipo con pases llenos de sabor. Su tazón de barro guarda tradición y ganas de ganar."
+        },
+        "en": {
+          "title": "Captain of the Table",
+          "role": "Traditional midfield maestro",
+          "trait": "Generous and brave",
+          "nationality": "Mexico",
+          "bio": "Born among celebrations and shared meals, Don Pozolazo brings the team together with flavorful passes. His clay bowl holds tradition and the will to win."
+        }
+      },
+      "id": "pozole",
+      "status": "published",
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "min_client_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ],
+      "sprite_scale": [
+        0.34,
+        0.34
+      ],
+      "album_cards": [
+        {
+          "id": "pozole_club",
+          "price": 140,
+          "copy": {
+            "es": {
+              "title": "Don Pozolazo Fútbol Club",
+              "description": "Don Pozolazo lleva el sabor de México a la cancha bajo las luces del estadio.",
+              "badge": "Fútbol Club"
+            },
+            "en": {
+              "title": "Don Pozolazo Football Club",
+              "description": "Don Pozolazo brings the flavor of Mexico to the pitch under the stadium lights.",
+              "badge": "Football Club"
+            }
+          },
+          "asset": {
+            "url": "https://ferfranky.github.io/foodball-go-site/live-content/pozole/pozole_club.webp",
+            "bytes": 164012,
+            "sha256": "f7dae6ebb80cebdfe02ad87e274e0a66ef89af31953e8a6bc369916ec03c9101"
+          }
+        }
+      ],
+      "assets": {
+        "idle": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pozole/pozole_idle.webp",
+          "bytes": 35112,
+          "sha256": "240df5939cf95bdb16bd7bd3b211bf482c2f9c23041d2daf5f239feab1483df2"
+        },
+        "run_1": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pozole/pozole_run_1.webp",
+          "bytes": 32240,
+          "sha256": "18f4684b76f49b8a7165118a52be406dae0fa61221ef5b0aa568cba3f5802858"
+        },
+        "run_2": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pozole/pozole_run_2.webp",
+          "bytes": 29936,
+          "sha256": "4bf83a84b957a9bb12054ce959186a41d4f2a8c91cf61857615b4d46915fee0e"
+        },
+        "jump": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pozole/pozole_jump.webp",
+          "bytes": 31546,
+          "sha256": "33fa1391fe503c21516f205f5973f587c849999998b9ce57f678d48a3cc29303"
+        },
+        "selection_default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pozole/pozole_selection_default.webp",
+          "bytes": 96814,
+          "sha256": "2b7f94933b443afbd59123a53bf841a17bf8c5d0b92c6c269fb6e6e98fb212eb"
+        },
+        "selection_player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pozole/pozole_selection_player.webp",
+          "bytes": 99948,
+          "sha256": "ddfd0205e46e68eac09e3fe7a83bc4f9b835de4a001cdc35ddb06568ce769e12"
+        },
+        "selection_cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/pozole/pozole_selection_cpu.webp",
+          "bytes": 99252,
+          "sha256": "3f1569de209f148b2941db3606c0776a988ccc0caf05b97ad23a74daf424a8d8"
+        }
+      }
+    },
+    {
+      "name": {
+        "es": "Quesa la Traviesa",
+        "en": "Quesa the Mischievous"
+      },
+      "story": {
+        "es": {
+          "title": "La Reina del Comal",
+          "role": "Extrema de regate dorado",
+          "trait": "Ingenio y picardía",
+          "nationality": "México",
+          "bio": "Recién salida del comal, Quesa mezcla una sonrisa traviesa con cambios de ritmo inesperados. Su queso se estira tanto como su imaginación para encontrar el gol."
+        },
+        "en": {
+          "title": "Queen of the Griddle",
+          "role": "Golden dribbling winger",
+          "trait": "Clever and playful",
+          "nationality": "Mexico",
+          "bio": "Fresh off the griddle, Quesa pairs a mischievous smile with unexpected bursts of speed. Her cheese stretches as far as her imagination when finding a goal."
+        }
+      },
+      "id": "quesadilla",
+      "status": "published",
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "min_client_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ],
+      "sprite_scale": [
+        0.34,
+        0.34
+      ],
+      "album_cards": [
+        {
+          "id": "quesadilla_club",
+          "price": 140,
+          "copy": {
+            "es": {
+              "title": "Quesa la Traviesa Fútbol Club",
+              "description": "Quesa la Traviesa lleva el sabor de México a la cancha bajo las luces del estadio.",
+              "badge": "Fútbol Club"
+            },
+            "en": {
+              "title": "Quesa the Mischievous Football Club",
+              "description": "Quesa the Mischievous brings the flavor of Mexico to the pitch under the stadium lights.",
+              "badge": "Football Club"
+            }
+          },
+          "asset": {
+            "url": "https://ferfranky.github.io/foodball-go-site/live-content/quesadilla/quesadilla_club.webp",
+            "bytes": 166570,
+            "sha256": "02e0f5b7b9828be96a7e674a5502287210cd6eec3fd59484d6c378603aba7a68"
+          }
+        }
+      ],
+      "assets": {
+        "idle": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/quesadilla/quesadilla_idle.webp",
+          "bytes": 22902,
+          "sha256": "7a6eef63e6188e74396af7be27b349c6de01c18229a38e2131c8cf1415e36922"
+        },
+        "run_1": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/quesadilla/quesadilla_run_1.webp",
+          "bytes": 24568,
+          "sha256": "db48faed139bbe667ab32f0f052f4f2bc12452124f3f7995dedb29fdc41e8cfb"
+        },
+        "run_2": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/quesadilla/quesadilla_run_2.webp",
+          "bytes": 21340,
+          "sha256": "c08e9a12980f6cea3be0a3d835841aa09363c2ad070a6d6fa75fdb2505c003fa"
+        },
+        "jump": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/quesadilla/quesadilla_jump.webp",
+          "bytes": 26128,
+          "sha256": "2916ebee8030b2b06462a859f1bcfa22f7bc96def6475344caaf3ba35e01fa16"
+        },
+        "selection_default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/quesadilla/quesadilla_selection_default.webp",
+          "bytes": 90348,
+          "sha256": "87eef67fad205e3551b92f2009c66e9699d30a7562b2f5f93e44b9f183ddb932"
+        },
+        "selection_player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/quesadilla/quesadilla_selection_player.webp",
+          "bytes": 89986,
+          "sha256": "22f18453df798f89e4cc8f094519f156949b9a2ee90c970a4238ac3cd874fa6a"
+        },
+        "selection_cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/quesadilla/quesadilla_selection_cpu.webp",
+          "bytes": 90576,
+          "sha256": "be95eda210463339ff6dbede2fba5f2439aff5edf716b7691c127f7eb51aa7a3"
+        }
+      }
+    },
+    {
+      "name": {
+        "es": "Don Tamalón",
+        "en": "Don Tamalon"
+      },
+      "story": {
+        "es": {
+          "title": "El Veterano de la Vaporera",
+          "role": "Delantero de hoja y corazón",
+          "trait": "Calma y experiencia",
+          "nationality": "México",
+          "bio": "Envuelto en su hoja de maíz, Don Tamalón llega temprano y conoce cada rincón de la cancha. Con paciencia de vaporera, espera el pase perfecto para marcar."
+        },
+        "en": {
+          "title": "The Steamer Veteran",
+          "role": "Corn-husk forward",
+          "trait": "Calm and experienced",
+          "nationality": "Mexico",
+          "bio": "Wrapped in his corn husk, Don Tamalon arrives early and knows every corner of the pitch. With a steamer's patience, he waits for the perfect pass to score."
+        }
+      },
+      "id": "tamal",
+      "status": "published",
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "min_client_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ],
+      "sprite_scale": [
+        0.34,
+        0.34
+      ],
+      "album_cards": [
+        {
+          "id": "tamal_club",
+          "price": 140,
+          "copy": {
+            "es": {
+              "title": "Don Tamalón Fútbol Club",
+              "description": "Don Tamalón lleva el sabor de México a la cancha bajo las luces del estadio.",
+              "badge": "Fútbol Club"
+            },
+            "en": {
+              "title": "Don Tamalon Football Club",
+              "description": "Don Tamalon brings the flavor of Mexico to the pitch under the stadium lights.",
+              "badge": "Football Club"
+            }
+          },
+          "asset": {
+            "url": "https://ferfranky.github.io/foodball-go-site/live-content/tamal/tamal_club.webp",
+            "bytes": 175272,
+            "sha256": "a46f811ef6b49890ff9fbbfc35f11584b7ef73d80822f2855ff0b10773f98eea"
+          }
+        }
+      ],
+      "assets": {
+        "idle": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/tamal/tamal_idle.webp",
+          "bytes": 24302,
+          "sha256": "6818b81fd85d8e6cc32d62f2ac9a9b829ad1684394dc6cefb3aba97f4b3a6b40"
+        },
+        "run_1": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/tamal/tamal_run_1.webp",
+          "bytes": 24984,
+          "sha256": "19488534c5e947bb5aabbf5c747b7f207be878de68dfd0323f57d6bff4ee9dff"
+        },
+        "run_2": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/tamal/tamal_run_2.webp",
+          "bytes": 21588,
+          "sha256": "2a39f33c7859925429e24520c49f7a10733b8137ed31b78baee4f6cf473854e2"
+        },
+        "jump": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/tamal/tamal_jump.webp",
+          "bytes": 26782,
+          "sha256": "3c6b9fdc1bf5e055052035c85569eeefa28b4f1336b194dfbdeebf332241ff24"
+        },
+        "selection_default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/tamal/tamal_selection_default.webp",
+          "bytes": 92824,
+          "sha256": "3945aeb431acd688f4bcbbd26a1275d63008d3a252543256e27a4969fd72c373"
+        },
+        "selection_player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/tamal/tamal_selection_player.webp",
+          "bytes": 96368,
+          "sha256": "973e3564204332d83c85843eefa6f302ee44255baf6d6bdf14e615c2869e5bca"
+        },
+        "selection_cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/tamal/tamal_selection_cpu.webp",
+          "bytes": 89264,
+          "sha256": "85aca8a8d2ec2f1e31fd3722b25c95d8046cda8e5de46ef8b913169c8f0044b8"
+        }
+      }
     }
   ],
   "character_overrides": {
@@ -407,7 +892,12 @@
       "participants": [
         "Taco",
         "Nacho",
-        "pan_de_muerto"
+        "pan_de_muerto",
+        "nopal",
+        "elote_preparado",
+        "pozole",
+        "quesadilla",
+        "tamal"
       ]
     }
   ]
