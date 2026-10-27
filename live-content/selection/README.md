@@ -57,3 +57,6 @@ de catálogo/LiveOps y 8 pruebas Python. El cargador modificado de producción
 admitió las 8 ternas reales, sin reemplazar sprites ni quitar jugabilidad.
 Pruebas del cliente cubren fallback, caché offline, corrupción/reintento y
 actualizaciones atómicas. No se afirma validación física en teléfono.
+
+Pancho también se incorpora a este estilo en la revisión `2026-10-26.4`.
+Su galería y prompts están en [selección de Pancho](../pan_de_muerto/selection-art.md).
