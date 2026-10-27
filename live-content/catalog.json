@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-26.3",
+  "revision": "2026-10-26.4",
   "min_client_version": "1.0.11",
   "characters": [
     {
@@ -46,18 +46,18 @@
         },
         "selection_default": {
           "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_default.webp",
-          "bytes": 67450,
-          "sha256": "d6ef9abddbf2d4096594d917a5dc62ffd917bafe6d186db2e523e4a2ebe5de4c"
+          "bytes": 96906,
+          "sha256": "7af4aa4d7f32065e900358a8d1b335eabba73ec20be11fd335900a4e5c796f11"
         },
         "selection_player": {
           "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_player.webp",
-          "bytes": 68310,
-          "sha256": "ecb2e1448b9a48b0875ca6eeb0c18a8e1d155df67c985412144864b8a418a185"
+          "bytes": 94782,
+          "sha256": "a2cb0f7c97175c66582e7d8efca19f8e1eb29e977f42ea9b8cf3548cd511b824"
         },
         "selection_cpu": {
           "url": "https://ferfranky.github.io/foodball-go-site/live-content/pan_de_muerto/pan_de_muerto_selection_cpu.webp",
-          "bytes": 72048,
-          "sha256": "7b556279f1c72991a9fc6009deae2e246f3cfc1b5bc9749d43db0d4b2fb5ce7e"
+          "bytes": 97270,
+          "sha256": "ce32eee26696f3b6f6b32403e04f95578a284da14d953568a44cf199262e1ea6"
         }
       },
       "story": {

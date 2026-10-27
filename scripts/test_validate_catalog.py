@@ -29,6 +29,12 @@ class SelectionCatalogTests(unittest.TestCase):
         with self.assertRaisesRegex(AssertionError, "Wrong selection dimensions"):
             validator.validate_asset(self.assets["default"], (512, 768))
 
+    def test_pancho_has_complete_square_selection_states(self):
+        catalog = json.loads((validator.ROOT / "live-content/catalog.json").read_text(encoding="utf-8"))
+        pancho = next(entry for entry in catalog["characters"] if entry["id"] == "pan_de_muerto")
+        for state in ("default", "player", "cpu"):
+            self.assertGreater(validator.validate_asset(pancho["assets"][f"selection_{state}"], (512, 512)), 0)
+
 
 if __name__ == "__main__":
     unittest.main()
