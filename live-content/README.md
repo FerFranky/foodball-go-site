@@ -35,6 +35,22 @@ cuatro campos de política y, opcionalmente, `album_cards`. La política filtra
 al personaje local, pero sus sprites de juego se conservan dentro de la app
 como respaldo sin conexión.
 
+### Tarjetas de selección integradas
+
+El cliente con soporte de selecciones remotas permite declarar opcionalmente
+`character_overrides.<id>.selection_assets`: un objeto completo con `default`,
+`player` y `cpu`. Cada entrada usa `{url, bytes, sha256}` como los demás assets.
+Publicar WebP de 512×512 y aumentar `revision` al cambiarlos. Los clientes
+anteriores ignoran este campo y conservan sus imágenes integradas; no elevar
+`min_app_version` por un ajuste cosmético.
+
+El paquete se descarga en segundo plano, se activa completo y mantiene un
+respaldo local. Normal usa azul/cian, jugador verde y CPU rojo, conservando
+identidad y encuadre entre variantes. La guía del repo del juego está en
+`docs/visual_style.md` y el rol `.github/agents/visual-art-director.md`.
+`python scripts/validate_catalog.py` comprueba integridad, dimensiones y el
+presupuesto combinado de descarga; el CI incluye sus pruebas de regresión.
+
 Las tarjetas extra se descargan solo al abrir la página correspondiente del
 álbum. Cada personaje puede tener de 1 a 48 tarjetas remotas adicionales.
 
