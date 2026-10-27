@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-26.2",
+  "revision": "2026-10-26.3",
   "min_client_version": "1.0.11",
   "characters": [
     {
@@ -776,7 +776,24 @@
         "free_play",
         "tournament",
         "album"
-      ]
+      ],
+      "selection_assets": {
+        "default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Burger_default.webp",
+          "bytes": 90366,
+          "sha256": "0b11e750405ce69500a07c4cb7803e7ebb19668acd1c4964737d99eb8c89bc1c"
+        },
+        "player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Burger_player.webp",
+          "bytes": 88722,
+          "sha256": "249f32e26c2fde6c96b003fa5adf4e1ebdba6f18d3c18aecd99794c1bafd4b00"
+        },
+        "cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Burger_cpu.webp",
+          "bytes": 89632,
+          "sha256": "032b7f2470bcc3511139ec84074eeda7245af1e96e89f14fefd5861e7c9dbf05"
+        }
+      }
     },
     "Pizza": {
       "enabled": true,
@@ -786,7 +803,24 @@
         "free_play",
         "tournament",
         "album"
-      ]
+      ],
+      "selection_assets": {
+        "default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Pizza_default.webp",
+          "bytes": 89060,
+          "sha256": "01897fc7973ea115b00f8df8ffa940a4c3329463d872ac05c7287bdebb0016e6"
+        },
+        "player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Pizza_player.webp",
+          "bytes": 91026,
+          "sha256": "d202404013979212ef335123b256eb19df8470f40d4f683a9883119104293351"
+        },
+        "cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Pizza_cpu.webp",
+          "bytes": 88286,
+          "sha256": "e3cbfdd9d4886113864c5173e5f7550e671b208119b77a04b635f4c1d7b6c5d0"
+        }
+      }
     },
     "Fries": {
       "enabled": true,
@@ -796,7 +830,24 @@
         "free_play",
         "tournament",
         "album"
-      ]
+      ],
+      "selection_assets": {
+        "default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Fries_default.webp",
+          "bytes": 83558,
+          "sha256": "246d09963dbf50b4f769169d40f34d05f55811b72f9e2c2212d3d6333c6e8007"
+        },
+        "player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Fries_player.webp",
+          "bytes": 84504,
+          "sha256": "f49ab82a1328d58784bfc1d7e0619e6876ab509c81e8698a095d2931bf27ee97"
+        },
+        "cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Fries_cpu.webp",
+          "bytes": 85770,
+          "sha256": "1e3f4a0d1b7c9c127bf4353e1ec46f974c78d5cd85bc1cf13eba4b669dc09779"
+        }
+      }
     },
     "Taco": {
       "enabled": true,
@@ -806,7 +857,24 @@
         "free_play",
         "tournament",
         "album"
-      ]
+      ],
+      "selection_assets": {
+        "default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Taco_default.webp",
+          "bytes": 95190,
+          "sha256": "91900d9b06acf815a8bdc8c5b5a85f8696b97428af4e2d106e71d479ec5b0a97"
+        },
+        "player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Taco_player.webp",
+          "bytes": 95722,
+          "sha256": "1e6881f59981b112dbd916550ce9f98d41ea66ea1a87223d29c7fd15c3073ec4"
+        },
+        "cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Taco_cpu.webp",
+          "bytes": 97512,
+          "sha256": "1da1819884cb9edaa3204f0e7c1009623b7e0d18a645de9365b6dfec2aa87978"
+        }
+      }
     },
     "Hotdog": {
       "enabled": true,
@@ -816,7 +884,24 @@
         "free_play",
         "tournament",
         "album"
-      ]
+      ],
+      "selection_assets": {
+        "default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Hotdog_default.webp",
+          "bytes": 82460,
+          "sha256": "46888d6fbfef5bcec7b099f099f894909fc833462f826c223d745280f2e9852c"
+        },
+        "player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Hotdog_player.webp",
+          "bytes": 84526,
+          "sha256": "e9bac051a95abddfd351db802b87b7f1ff4cc5a8ff130919f33fa2a66e72b337"
+        },
+        "cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Hotdog_cpu.webp",
+          "bytes": 83858,
+          "sha256": "ccdf2dc21a1898a09403f2977299c9cfa947b73188d5b5d808e7c5fd0d997c19"
+        }
+      }
     },
     "Icecream": {
       "enabled": true,
@@ -826,7 +911,24 @@
         "free_play",
         "tournament",
         "album"
-      ]
+      ],
+      "selection_assets": {
+        "default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Icecream_default.webp",
+          "bytes": 85370,
+          "sha256": "d8f5a9ae6094160e333e2d5c58ea72934b9838df09da347285f8b9da9dd147b6"
+        },
+        "player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Icecream_player.webp",
+          "bytes": 91272,
+          "sha256": "99b78e2d26b4007dce7ebca13831e44be1bf9386e0b1a1305315a56bbc05a024"
+        },
+        "cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Icecream_cpu.webp",
+          "bytes": 86684,
+          "sha256": "510182c1ba4896697b2239c7a86d9ba241a62a629f13d13db7937ab6bd421eab"
+        }
+      }
     },
     "Nacho": {
       "enabled": true,
@@ -836,7 +938,24 @@
         "free_play",
         "tournament",
         "album"
-      ]
+      ],
+      "selection_assets": {
+        "default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Nacho_default.webp",
+          "bytes": 92430,
+          "sha256": "06ae85035c212ad6d1c8e6231769f744e1b8ed7635ed3c0bc5cda941e074b10a"
+        },
+        "player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Nacho_player.webp",
+          "bytes": 93874,
+          "sha256": "c9481d05fe10654ea232bd3b97e072f9d054f15a708890f4ed1f0dd0d0b9673e"
+        },
+        "cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Nacho_cpu.webp",
+          "bytes": 91260,
+          "sha256": "4e513c56e56036bc50d24b671b4df574276fdde25e495d3c2bcd02f044edc3a7"
+        }
+      }
     },
     "Soda": {
       "enabled": true,
@@ -846,7 +965,24 @@
         "free_play",
         "tournament",
         "album"
-      ]
+      ],
+      "selection_assets": {
+        "default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Soda_default.webp",
+          "bytes": 88650,
+          "sha256": "c6d0b8d18ed6f428d863fc3f8af951ab0565a37c38a96cb8f332c8a697fb573f"
+        },
+        "player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Soda_player.webp",
+          "bytes": 90502,
+          "sha256": "6a4d9333fd598bf1f17f13093e89be958c77b414b7779ae5fd62fa1f330b910a"
+        },
+        "cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/selection/Soda_cpu.webp",
+          "bytes": 90620,
+          "sha256": "6b0a16727fa93e34bf4d1090fef5d040f2f13a7e2eaf8e9913727a9efeddfbf6"
+        }
+      }
     }
   },
   "tournaments": [
