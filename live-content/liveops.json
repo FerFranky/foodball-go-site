@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-21.3",
+  "revision": "2026-11-17.1",
   "min_client_version": "1.0.0",
-  "updated_at": "2026-10-21T19:00:00Z",
+  "updated_at": "2026-11-17T20:00:00Z",
   "seasons": [
     {
       "id": "fiesta_del_gol_2026",
@@ -41,10 +41,15 @@
             "event": "goal_scored",
             "target": 10,
             "filters": {
-              "game_modes": ["free_play"]
+              "game_modes": [
+                "free_play"
+              ]
             }
           },
-          "reward": { "type": "coins", "amount": 25 }
+          "reward": {
+            "type": "coins",
+            "amount": 25
+          }
         },
         {
           "id": "fiesta_semanal_5_victorias",
@@ -66,10 +71,16 @@
             "event": "match_won",
             "target": 5,
             "filters": {
-              "game_modes": ["free_play", "tournament"]
+              "game_modes": [
+                "free_play",
+                "tournament"
+              ]
             }
           },
-          "reward": { "type": "coins", "amount": 75 }
+          "reward": {
+            "type": "coins",
+            "amount": 75
+          }
         },
         {
           "id": "fiesta_pancho_25_goles",
@@ -91,10 +102,15 @@
             "event": "goal_scored",
             "target": 25,
             "filters": {
-              "player_character_ids": ["pan_de_muerto"]
+              "player_character_ids": [
+                "pan_de_muerto"
+              ]
             }
           },
-          "reward": { "type": "coins", "amount": 150 }
+          "reward": {
+            "type": "coins",
+            "amount": 150
+          }
         },
         {
           "id": "fiesta_fast_foot_3_victorias",
@@ -116,11 +132,18 @@
             "event": "tournament_match_won",
             "target": 3,
             "filters": {
-              "game_modes": ["tournament"],
-              "tournament_ids": ["fast_foot"]
+              "game_modes": [
+                "tournament"
+              ],
+              "tournament_ids": [
+                "fast_foot"
+              ]
             }
           },
-          "reward": { "type": "coins", "amount": 125 }
+          "reward": {
+            "type": "coins",
+            "amount": 125
+          }
         },
         {
           "id": "fiesta_mexican_food_campeon",
@@ -142,11 +165,18 @@
             "event": "tournament_won",
             "target": 1,
             "filters": {
-              "game_modes": ["tournament"],
-              "tournament_ids": ["mexican_food"]
+              "game_modes": [
+                "tournament"
+              ],
+              "tournament_ids": [
+                "mexican_food"
+              ]
             }
           },
-          "reward": { "type": "coins", "amount": 250 }
+          "reward": {
+            "type": "coins",
+            "amount": 250
+          }
         }
       ]
     },
@@ -174,11 +204,28 @@
           "ends_at": "2026-11-15T23:59:59Z",
           "sort_order": 10,
           "copy": {
-            "es": { "title": "Velitas goleadoras", "description": "Anota 5 goles en Modo libre." },
-            "en": { "title": "Goal candles", "description": "Score 5 goals in Free Play." }
+            "es": {
+              "title": "Velitas goleadoras",
+              "description": "Anota 5 goles en Modo libre."
+            },
+            "en": {
+              "title": "Goal candles",
+              "description": "Score 5 goals in Free Play."
+            }
           },
-          "objective": { "event": "goal_scored", "target": 5, "filters": { "game_modes": ["free_play"] } },
-          "reward": { "type": "coins", "amount": 20 }
+          "objective": {
+            "event": "goal_scored",
+            "target": 5,
+            "filters": {
+              "game_modes": [
+                "free_play"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 20
+          }
         },
         {
           "id": "muertos_semanal_3_victorias",
@@ -187,11 +234,29 @@
           "ends_at": "2026-11-15T23:59:59Z",
           "sort_order": 20,
           "copy": {
-            "es": { "title": "Camino de cempasúchil", "description": "Consigue 3 victorias en cualquier modo." },
-            "en": { "title": "Marigold path", "description": "Earn 3 victories in any mode." }
+            "es": {
+              "title": "Camino de cempasúchil",
+              "description": "Consigue 3 victorias en cualquier modo."
+            },
+            "en": {
+              "title": "Marigold path",
+              "description": "Earn 3 victories in any mode."
+            }
           },
-          "objective": { "event": "match_won", "target": 3, "filters": { "game_modes": ["free_play", "tournament"] } },
-          "reward": { "type": "coins", "amount": 60 }
+          "objective": {
+            "event": "match_won",
+            "target": 3,
+            "filters": {
+              "game_modes": [
+                "free_play",
+                "tournament"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 60
+          }
         },
         {
           "id": "muertos_diario_partidos_completados",
@@ -200,11 +265,29 @@
           "ends_at": "2026-11-15T23:59:59Z",
           "sort_order": 15,
           "copy": {
-            "es": { "title": "Visita a la ofrenda", "description": "Completa 2 partidos en cualquier modo." },
-            "en": { "title": "Visit the ofrenda", "description": "Complete 2 matches in any mode." }
+            "es": {
+              "title": "Visita a la ofrenda",
+              "description": "Completa 2 partidos en cualquier modo."
+            },
+            "en": {
+              "title": "Visit the ofrenda",
+              "description": "Complete 2 matches in any mode."
+            }
           },
-          "objective": { "event": "match_completed", "target": 2, "filters": { "game_modes": ["free_play", "tournament"] } },
-          "reward": { "type": "coins", "amount": 15 }
+          "objective": {
+            "event": "match_completed",
+            "target": 2,
+            "filters": {
+              "game_modes": [
+                "free_play",
+                "tournament"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 15
+          }
         },
         {
           "id": "muertos_diario_una_victoria",
@@ -213,11 +296,28 @@
           "ends_at": "2026-11-15T23:59:59Z",
           "sort_order": 18,
           "copy": {
-            "es": { "title": "Calaverita ganadora", "description": "Consigue una victoria en Modo libre." },
-            "en": { "title": "Winning calaverita", "description": "Earn one Free Play victory." }
+            "es": {
+              "title": "Calaverita ganadora",
+              "description": "Consigue una victoria en Modo libre."
+            },
+            "en": {
+              "title": "Winning calaverita",
+              "description": "Earn one Free Play victory."
+            }
           },
-          "objective": { "event": "match_won", "target": 1, "filters": { "game_modes": ["free_play"] } },
-          "reward": { "type": "coins", "amount": 20 }
+          "objective": {
+            "event": "match_won",
+            "target": 1,
+            "filters": {
+              "game_modes": [
+                "free_play"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 20
+          }
         },
         {
           "id": "muertos_semanal_copa_mexicana",
@@ -226,11 +326,31 @@
           "ends_at": "2026-11-15T23:59:59Z",
           "sort_order": 25,
           "copy": {
-            "es": { "title": "Rumbo al altar", "description": "Gana 2 partidos en la Copa Mexican Food." },
-            "en": { "title": "Road to the altar", "description": "Win 2 matches in the Mexican Food Cup." }
+            "es": {
+              "title": "Rumbo al altar",
+              "description": "Gana 2 partidos en la Copa Mexican Food."
+            },
+            "en": {
+              "title": "Road to the altar",
+              "description": "Win 2 matches in the Mexican Food Cup."
+            }
           },
-          "objective": { "event": "tournament_match_won", "target": 2, "filters": { "game_modes": ["tournament"], "tournament_ids": ["mexican_food"] } },
-          "reward": { "type": "coins", "amount": 90 }
+          "objective": {
+            "event": "tournament_match_won",
+            "target": 2,
+            "filters": {
+              "game_modes": [
+                "tournament"
+              ],
+              "tournament_ids": [
+                "mexican_food"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 90
+          }
         },
         {
           "id": "muertos_pancho_15_goles",
@@ -239,11 +359,28 @@
           "ends_at": "2026-11-15T23:59:59Z",
           "sort_order": 30,
           "copy": {
-            "es": { "title": "Pancho en la ofrenda", "description": "Anota 15 goles con Pancho de la Ofrenda." },
-            "en": { "title": "Pancho at the ofrenda", "description": "Score 15 goals with Pancho de la Ofrenda." }
+            "es": {
+              "title": "Pancho en la ofrenda",
+              "description": "Anota 15 goles con Pancho de la Ofrenda."
+            },
+            "en": {
+              "title": "Pancho at the ofrenda",
+              "description": "Score 15 goals with Pancho de la Ofrenda."
+            }
           },
-          "objective": { "event": "goal_scored", "target": 15, "filters": { "player_character_ids": ["pan_de_muerto"] } },
-          "reward": { "type": "coins", "amount": 140 }
+          "objective": {
+            "event": "goal_scored",
+            "target": 15,
+            "filters": {
+              "player_character_ids": [
+                "pan_de_muerto"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 140
+          }
         },
         {
           "id": "muertos_mexican_food_copa",
@@ -252,11 +389,31 @@
           "ends_at": "2026-11-15T23:59:59Z",
           "sort_order": 40,
           "copy": {
-            "es": { "title": "Altar de campeones", "description": "Conquista la Copa Mexican Food." },
-            "en": { "title": "Champions' altar", "description": "Conquer the Mexican Food Cup." }
+            "es": {
+              "title": "Altar de campeones",
+              "description": "Conquista la Copa Mexican Food."
+            },
+            "en": {
+              "title": "Champions' altar",
+              "description": "Conquer the Mexican Food Cup."
+            }
           },
-          "objective": { "event": "tournament_won", "target": 1, "filters": { "game_modes": ["tournament"], "tournament_ids": ["mexican_food"] } },
-          "reward": { "type": "coins", "amount": 250 }
+          "objective": {
+            "event": "tournament_won",
+            "target": 1,
+            "filters": {
+              "game_modes": [
+                "tournament"
+              ],
+              "tournament_ids": [
+                "mexican_food"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 250
+          }
         },
         {
           "id": "muertos_30_goles",
@@ -265,11 +422,29 @@
           "ends_at": "2026-11-15T23:59:59Z",
           "sort_order": 50,
           "copy": {
-            "es": { "title": "Noche de goles", "description": "Anota 30 goles en cualquier modo." },
-            "en": { "title": "Night of goals", "description": "Score 30 goals in any mode." }
+            "es": {
+              "title": "Noche de goles",
+              "description": "Anota 30 goles en cualquier modo."
+            },
+            "en": {
+              "title": "Night of goals",
+              "description": "Score 30 goals in any mode."
+            }
           },
-          "objective": { "event": "goal_scored", "target": 30, "filters": { "game_modes": ["free_play", "tournament"] } },
-          "reward": { "type": "coins", "amount": 180 }
+          "objective": {
+            "event": "goal_scored",
+            "target": 30,
+            "filters": {
+              "game_modes": [
+                "free_play",
+                "tournament"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 180
+          }
         },
         {
           "id": "muertos_10_victorias",
@@ -278,11 +453,29 @@
           "ends_at": "2026-11-15T23:59:59Z",
           "sort_order": 60,
           "copy": {
-            "es": { "title": "Leyenda de la cancha", "description": "Consigue 10 victorias en cualquier modo." },
-            "en": { "title": "Pitch legend", "description": "Earn 10 victories in any mode." }
+            "es": {
+              "title": "Leyenda de la cancha",
+              "description": "Consigue 10 victorias en cualquier modo."
+            },
+            "en": {
+              "title": "Pitch legend",
+              "description": "Earn 10 victories in any mode."
+            }
           },
-          "objective": { "event": "match_won", "target": 10, "filters": { "game_modes": ["free_play", "tournament"] } },
-          "reward": { "type": "coins", "amount": 200 }
+          "objective": {
+            "event": "match_won",
+            "target": 10,
+            "filters": {
+              "game_modes": [
+                "free_play",
+                "tournament"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 200
+          }
         },
         {
           "id": "muertos_2_autogoles",
@@ -291,11 +484,347 @@
           "ends_at": "2026-11-15T23:59:59Z",
           "sort_order": 70,
           "copy": {
-            "es": { "title": "Travesura del más allá", "description": "Marca 2 autogoles." },
-            "en": { "title": "Beyond the veil", "description": "Score 2 own goals." }
+            "es": {
+              "title": "Travesura del más allá",
+              "description": "Marca 2 autogoles."
+            },
+            "en": {
+              "title": "Beyond the veil",
+              "description": "Score 2 own goals."
+            }
           },
-          "objective": { "event": "own_goal_scored", "target": 2 },
-          "reward": { "type": "coins", "amount": 80 }
+          "objective": {
+            "event": "own_goal_scored",
+            "target": 2
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 80
+          }
+        }
+      ]
+    },
+    {
+      "id": "navidad_2026",
+      "status": "published",
+      "starts_at": "2026-12-01T06:00:00Z",
+      "ends_at": "2027-01-07T06:00:00Z",
+      "sort_order": 30,
+      "copy": {
+        "es": {
+          "title": "Posada del gol",
+          "description": "Comparte la alegría del ponche y celebra la Navidad con goles, victorias y una copa mexicana."
+        },
+        "en": {
+          "title": "Goal Posada",
+          "description": "Share the warmth of Mexican fruit punch and celebrate Christmas with goals, victories and a Mexican cup."
+        }
+      },
+      "challenges": [
+        {
+          "id": "navidad_diario_5_goles",
+          "cadence": "daily",
+          "starts_at": "2026-12-01T06:00:00Z",
+          "ends_at": "2027-01-07T06:00:00Z",
+          "sort_order": 10,
+          "copy": {
+            "es": {
+              "title": "Goles para la posada",
+              "description": "Anota 5 goles en Modo libre."
+            },
+            "en": {
+              "title": "Posada goals",
+              "description": "Score 5 goals in Free Play."
+            }
+          },
+          "objective": {
+            "event": "goal_scored",
+            "target": 5,
+            "filters": {
+              "game_modes": [
+                "free_play"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 20
+          }
+        },
+        {
+          "id": "navidad_semanal_3_victorias",
+          "cadence": "weekly",
+          "starts_at": "2026-12-01T06:00:00Z",
+          "ends_at": "2027-01-07T06:00:00Z",
+          "sort_order": 20,
+          "copy": {
+            "es": {
+              "title": "Semana de alegría",
+              "description": "Consigue 3 victorias en cualquier modo."
+            },
+            "en": {
+              "title": "A week of cheer",
+              "description": "Earn 3 victories in any mode."
+            }
+          },
+          "objective": {
+            "event": "match_won",
+            "target": 3,
+            "filters": {
+              "game_modes": [
+                "free_play",
+                "tournament"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 60
+          }
+        },
+        {
+          "id": "navidad_diario_partidos_completados",
+          "cadence": "daily",
+          "starts_at": "2026-12-01T06:00:00Z",
+          "ends_at": "2027-01-07T06:00:00Z",
+          "sort_order": 15,
+          "copy": {
+            "es": {
+              "title": "Invitado a la posada",
+              "description": "Completa 2 partidos en cualquier modo."
+            },
+            "en": {
+              "title": "Posada guest",
+              "description": "Complete 2 matches in any mode."
+            }
+          },
+          "objective": {
+            "event": "match_completed",
+            "target": 2,
+            "filters": {
+              "game_modes": [
+                "free_play",
+                "tournament"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 15
+          }
+        },
+        {
+          "id": "navidad_diario_una_victoria",
+          "cadence": "daily",
+          "starts_at": "2026-12-01T06:00:00Z",
+          "ends_at": "2027-01-07T06:00:00Z",
+          "sort_order": 18,
+          "copy": {
+            "es": {
+              "title": "Regalo de victoria",
+              "description": "Consigue una victoria en Modo libre."
+            },
+            "en": {
+              "title": "A gift of victory",
+              "description": "Earn one Free Play victory."
+            }
+          },
+          "objective": {
+            "event": "match_won",
+            "target": 1,
+            "filters": {
+              "game_modes": [
+                "free_play"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 20
+          }
+        },
+        {
+          "id": "navidad_semanal_copa_mexicana",
+          "cadence": "weekly",
+          "starts_at": "2026-12-01T06:00:00Z",
+          "ends_at": "2027-01-07T06:00:00Z",
+          "sort_order": 25,
+          "copy": {
+            "es": {
+              "title": "Ruta de las posadas",
+              "description": "Gana 2 partidos en la Copa Mexican Food."
+            },
+            "en": {
+              "title": "The posada route",
+              "description": "Win 2 matches in the Mexican Food Cup."
+            }
+          },
+          "objective": {
+            "event": "tournament_match_won",
+            "target": 2,
+            "filters": {
+              "game_modes": [
+                "tournament"
+              ],
+              "tournament_ids": [
+                "mexican_food"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 90
+          }
+        },
+        {
+          "id": "navidad_ponchito_15_goles",
+          "cadence": "season",
+          "starts_at": "2026-12-01T06:00:00Z",
+          "ends_at": "2027-01-07T06:00:00Z",
+          "sort_order": 30,
+          "copy": {
+            "es": {
+              "title": "Ponchito goleador",
+              "description": "Anota 15 goles con Don Ponchito."
+            },
+            "en": {
+              "title": "Ponchito the scorer",
+              "description": "Score 15 goals with Don Ponchito."
+            }
+          },
+          "objective": {
+            "event": "goal_scored",
+            "target": 15,
+            "filters": {
+              "player_character_ids": [
+                "ponche_navideno"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 140
+          }
+        },
+        {
+          "id": "navidad_mexican_food_copa",
+          "cadence": "season",
+          "starts_at": "2026-12-01T06:00:00Z",
+          "ends_at": "2027-01-07T06:00:00Z",
+          "sort_order": 40,
+          "copy": {
+            "es": {
+              "title": "La copa de la posada",
+              "description": "Conquista la Copa Mexican Food."
+            },
+            "en": {
+              "title": "The posada cup",
+              "description": "Conquer the Mexican Food Cup."
+            }
+          },
+          "objective": {
+            "event": "tournament_won",
+            "target": 1,
+            "filters": {
+              "game_modes": [
+                "tournament"
+              ],
+              "tournament_ids": [
+                "mexican_food"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 250
+          }
+        },
+        {
+          "id": "navidad_30_goles",
+          "cadence": "season",
+          "starts_at": "2026-12-01T06:00:00Z",
+          "ends_at": "2027-01-07T06:00:00Z",
+          "sort_order": 50,
+          "copy": {
+            "es": {
+              "title": "Luces de gol",
+              "description": "Anota 30 goles en cualquier modo."
+            },
+            "en": {
+              "title": "Goal lights",
+              "description": "Score 30 goals in any mode."
+            }
+          },
+          "objective": {
+            "event": "goal_scored",
+            "target": 30,
+            "filters": {
+              "game_modes": [
+                "free_play",
+                "tournament"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 180
+          }
+        },
+        {
+          "id": "navidad_10_victorias",
+          "cadence": "season",
+          "starts_at": "2026-12-01T06:00:00Z",
+          "ends_at": "2027-01-07T06:00:00Z",
+          "sort_order": 60,
+          "copy": {
+            "es": {
+              "title": "Espíritu ganador",
+              "description": "Consigue 10 victorias en cualquier modo."
+            },
+            "en": {
+              "title": "Winning spirit",
+              "description": "Earn 10 victories in any mode."
+            }
+          },
+          "objective": {
+            "event": "match_won",
+            "target": 10,
+            "filters": {
+              "game_modes": [
+                "free_play",
+                "tournament"
+              ]
+            }
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 200
+          }
+        },
+        {
+          "id": "navidad_2_autogoles",
+          "cadence": "season",
+          "starts_at": "2026-12-01T06:00:00Z",
+          "ends_at": "2027-01-07T06:00:00Z",
+          "sort_order": 70,
+          "copy": {
+            "es": {
+              "title": "Carambola navideña",
+              "description": "Marca 2 autogoles."
+            },
+            "en": {
+              "title": "Christmas mix-up",
+              "description": "Score 2 own goals."
+            }
+          },
+          "objective": {
+            "event": "own_goal_scored",
+            "target": 2
+          },
+          "reward": {
+            "type": "coins",
+            "amount": 80
+          }
         }
       ]
     }
@@ -306,55 +835,115 @@
       "sort_order": 10,
       "visibility": "visible",
       "copy": {
-        "es": { "title": "Rompe redes", "description": "Anota tus primeros 10 goles." },
-        "en": { "title": "Net breaker", "description": "Score your first 10 goals." }
+        "es": {
+          "title": "Rompe redes",
+          "description": "Anota tus primeros 10 goles."
+        },
+        "en": {
+          "title": "Net breaker",
+          "description": "Score your first 10 goals."
+        }
       },
-      "objective": { "event": "goal_scored", "target": 10 },
-      "reward": { "type": "coins", "amount": 50 }
+      "objective": {
+        "event": "goal_scored",
+        "target": 10
+      },
+      "reward": {
+        "type": "coins",
+        "amount": 50
+      }
     },
     {
       "id": "first_100_goals",
       "sort_order": 20,
       "visibility": "visible",
       "copy": {
-        "es": { "title": "Cañonero de cocina", "description": "Anota 100 goles." },
-        "en": { "title": "Kitchen cannon", "description": "Score 100 goals." }
+        "es": {
+          "title": "Cañonero de cocina",
+          "description": "Anota 100 goles."
+        },
+        "en": {
+          "title": "Kitchen cannon",
+          "description": "Score 100 goals."
+        }
       },
-      "objective": { "event": "goal_scored", "target": 100 },
-      "reward": { "type": "coins", "amount": 200 }
+      "objective": {
+        "event": "goal_scored",
+        "target": 100
+      },
+      "reward": {
+        "type": "coins",
+        "amount": 200
+      }
     },
     {
       "id": "first_win",
       "sort_order": 30,
       "visibility": "visible",
       "copy": {
-        "es": { "title": "Primer bocado", "description": "Consigue tu primera victoria." },
-        "en": { "title": "First bite", "description": "Earn your first victory." }
+        "es": {
+          "title": "Primer bocado",
+          "description": "Consigue tu primera victoria."
+        },
+        "en": {
+          "title": "First bite",
+          "description": "Earn your first victory."
+        }
       },
-      "objective": { "event": "match_won", "target": 1 },
-      "reward": { "type": "coins", "amount": 40 }
+      "objective": {
+        "event": "match_won",
+        "target": 1
+      },
+      "reward": {
+        "type": "coins",
+        "amount": 40
+      }
     },
     {
       "id": "own_goal_aware",
       "sort_order": 40,
       "visibility": "hidden_until_unlocked",
       "copy": {
-        "es": { "title": "¡Era la otra portería!", "description": "Marca un autogol." },
-        "en": { "title": "Wrong goal!", "description": "Score an own goal." }
+        "es": {
+          "title": "¡Era la otra portería!",
+          "description": "Marca un autogol."
+        },
+        "en": {
+          "title": "Wrong goal!",
+          "description": "Score an own goal."
+        }
       },
-      "objective": { "event": "own_goal_scored", "target": 1 },
-      "reward": { "type": "coins", "amount": 15 }
+      "objective": {
+        "event": "own_goal_scored",
+        "target": 1
+      },
+      "reward": {
+        "type": "coins",
+        "amount": 15
+      }
     },
     {
       "id": "first_cup",
       "sort_order": 50,
       "visibility": "visible",
       "copy": {
-        "es": { "title": "Mesa de campeones", "description": "Gana un torneo." },
-        "en": { "title": "Champions' table", "description": "Win a tournament." }
+        "es": {
+          "title": "Mesa de campeones",
+          "description": "Gana un torneo."
+        },
+        "en": {
+          "title": "Champions' table",
+          "description": "Win a tournament."
+        }
       },
-      "objective": { "event": "tournament_won", "target": 1 },
-      "reward": { "type": "coins", "amount": 150 }
+      "objective": {
+        "event": "tournament_won",
+        "target": 1
+      },
+      "reward": {
+        "type": "coins",
+        "amount": 150
+      }
     }
   ]
 }
