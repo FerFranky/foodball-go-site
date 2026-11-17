@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-26.4",
+  "revision": "2026-11-17.1",
   "min_client_version": "1.0.11",
   "characters": [
     {
@@ -765,6 +765,103 @@
           "sha256": "85aca8a8d2ec2f1e31fd3722b25c95d8046cda8e5de46ef8b913169c8f0044b8"
         }
       }
+    },
+    {
+      "id": "ponche_navideno",
+      "status": "published",
+      "enabled": true,
+      "min_app_version": "1.0.11",
+      "content_rating": "all_ages",
+      "contexts": [
+        "free_play",
+        "tournament",
+        "album"
+      ],
+      "name": {
+        "es": "Don Ponchito",
+        "en": "Don Ponchito"
+      },
+      "sprite_scale": [
+        0.48,
+        0.48
+      ],
+      "min_client_version": "1.0.11",
+      "assets": {
+        "idle": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/ponche_navideno/ponche_navideno_idle.webp",
+          "bytes": 29052,
+          "sha256": "c016dd88501bbf7f37dd950944506143d1df9531494f3d5a77df3a776506bfa4"
+        },
+        "run_1": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/ponche_navideno/ponche_navideno_run_1.webp",
+          "bytes": 30080,
+          "sha256": "12f3adf30c08d5e7efe540d8ffa8c935d82f614db67df148f374d8364811b677"
+        },
+        "run_2": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/ponche_navideno/ponche_navideno_run_2.webp",
+          "bytes": 27630,
+          "sha256": "105c805f36752b2b87e8132cae3d4fd205ed4ea64bc9c737e23b8287a92b688a"
+        },
+        "jump": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/ponche_navideno/ponche_navideno_jump.webp",
+          "bytes": 29512,
+          "sha256": "9ace31997699ec430b02869e7d6edd9eac78496627a474a5f7c9a149cd6c0b8c"
+        },
+        "selection_default": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/ponche_navideno/ponche_navideno_selection_default.webp",
+          "bytes": 86560,
+          "sha256": "0836546c00eeb1cf1aae90f95aec6bdc79f474f2e7314cfb48502866d83e38b4"
+        },
+        "selection_player": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/ponche_navideno/ponche_navideno_selection_player.webp",
+          "bytes": 87630,
+          "sha256": "59a6f89212ada69b8651c5d3b0e87e2827f6905fbe5642591ab18a1c0e2b5c67"
+        },
+        "selection_cpu": {
+          "url": "https://ferfranky.github.io/foodball-go-site/live-content/ponche_navideno/ponche_navideno_selection_cpu.webp",
+          "bytes": 88590,
+          "sha256": "dfda03d0c32f26cdcca08f526900c43c036f5f3691bd1b061afdb0924c09d08f"
+        }
+      },
+      "story": {
+        "es": {
+          "title": "El calor de la posada",
+          "role": "Mediocampista de temporada",
+          "trait": "Espíritu de equipo",
+          "nationality": "México",
+          "bio": "Nacido entre guayabas, manzana y canela, Don Ponchito llega en su jarrito de barro para dar calor a la cancha. Su ponche no lleva alcohol: reparte pases y alegría de posada para que nadie se quede fuera del equipo."
+        },
+        "en": {
+          "title": "The warmth of the posada",
+          "role": "Festive midfielder",
+          "trait": "Team spirit",
+          "nationality": "Mexico",
+          "bio": "Made with guava, apple and cinnamon, Don Ponchito arrives in his clay mug to warm up the pitch. His punch is alcohol-free: he shares passes and posada cheer so nobody is left off the team."
+        }
+      },
+      "album_cards": [
+        {
+          "id": "ponche_navideno_club",
+          "price": 140,
+          "copy": {
+            "es": {
+              "title": "Don Ponchito: Posada futbolera",
+              "badge": "Posada futbolera",
+              "description": "Bajo luces navideñas y una piñata de estrella, Don Ponchito comparte la alegría del fútbol y del ponche mexicano sin alcohol."
+            },
+            "en": {
+              "title": "Don Ponchito: Football Posada",
+              "badge": "Football Posada",
+              "description": "Under Christmas lights and a star piñata, Don Ponchito shares the joy of football and alcohol-free Mexican fruit punch."
+            }
+          },
+          "asset": {
+            "url": "https://ferfranky.github.io/foodball-go-site/live-content/ponche_navideno/ponche_navideno_club.webp",
+            "bytes": 162634,
+            "sha256": "2775540cbbbb791cf53031c449d555e93a4a3642aafdcae8a16c0f2fd6a9dd75"
+          }
+        }
+      ]
     }
   ],
   "character_overrides": {
@@ -1033,7 +1130,8 @@
         "elote_preparado",
         "pozole",
         "quesadilla",
-        "tamal"
+        "tamal",
+        "ponche_navideno"
       ]
     }
   ]

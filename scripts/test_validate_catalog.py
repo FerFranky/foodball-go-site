@@ -35,6 +35,34 @@ class SelectionCatalogTests(unittest.TestCase):
         for state in ("default", "player", "cpu"):
             self.assertGreater(validator.validate_asset(pancho["assets"][f"selection_{state}"], (512, 512)), 0)
 
+    def test_ponche_has_complete_playable_package(self):
+        catalog = json.loads((validator.ROOT / "live-content/catalog.json").read_text(encoding="utf-8"))
+        ponche = next(entry for entry in catalog["characters"] if entry["id"] == "ponche_navideno")
+        self.assertTrue(ponche["enabled"])
+        self.assertEqual(ponche["status"], "published")
+        self.assertEqual(set(ponche["contexts"]), {"free_play", "tournament", "album"})
+        hashes = set()
+        for pose in ("idle", "run_1", "run_2", "jump"):
+            asset = ponche["assets"][pose]
+            self.assertGreater(validator.validate_asset(asset, (512, 341)), 0)
+            path = validator.ROOT / asset["url"].split("/foodball-go-site/", 1)[1]
+            payload = path.read_bytes()
+            self.assertEqual(payload[12:16], b"VP8X")
+            self.assertTrue(payload[20] & 0x10, "Sprite must retain alpha")
+            hashes.add(asset["sha256"])
+        self.assertEqual(len(hashes), 4, "Poses must not be duplicated")
+        for state in ("default", "player", "cpu"):
+            validator.validate_asset(ponche["assets"][f"selection_{state}"], (512, 512))
+        card = ponche["album_cards"][0]
+        self.assertEqual(card["price"], 140)
+        validator.validate_asset(card["asset"], (512, 768))
+        for locale in ("es", "en"):
+            self.assertTrue(ponche["story"][locale]["bio"])
+            self.assertTrue(card["copy"][locale]["description"])
+        cup = next(cup for cup in catalog["tournaments"] if cup["id"] == "mexican_food")
+        self.assertIn("ponche_navideno", cup["participants"])
+        self.assertEqual(cup["min_participants"], 8)
+
 
 if __name__ == "__main__":
     unittest.main()
