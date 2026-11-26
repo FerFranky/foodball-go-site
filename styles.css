@@ -83,6 +83,7 @@ section { padding: 95px 0; }
 .cta:after { content: 'GO!'; position: absolute; right: -15px; bottom: -45px; color: rgba(7,19,38,.1); font: 800 11rem/.8 'Barlow Condensed'; transform: rotate(-8deg); }
 .cta h2 { position: relative; z-index: 1; max-width: 580px; font-size: clamp(3rem, 6vw, 5.8rem); }
 .cta p { position: relative; z-index: 1; max-width: 430px; margin: 17px 0 25px; line-height: 1.55; }
+.cta .button { position: relative; z-index: 1; }
 .footer { padding: 25px 0 45px; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; }
 .footer-inner { display: flex; justify-content: space-between; gap: 20px; }
 .footer a { margin-left: 22px; }
