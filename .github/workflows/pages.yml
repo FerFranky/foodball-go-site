@@ -7,11 +7,21 @@ on:
       - ".github/workflows/pages.yml"
       - "live-content/**"
       - "scripts/**"
+      - "index.html"
+      - "en/**"
+      - "styles.css"
+      - "assets/**"
+      - "privacy-policy/**"
   pull_request:
     paths:
       - ".github/workflows/pages.yml"
       - "live-content/**"
       - "scripts/**"
+      - "index.html"
+      - "en/**"
+      - "styles.css"
+      - "assets/**"
+      - "privacy-policy/**"
   workflow_dispatch:
 
 permissions:
@@ -60,6 +70,9 @@ jobs:
         uses: actions/upload-pages-artifact@v4
         with:
           path: .
+
+      - name: Wait for artifact availability
+        run: sleep 15
 
       - name: Deploy to GitHub Pages
         id: deployment
